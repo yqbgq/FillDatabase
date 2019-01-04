@@ -18,4 +18,36 @@ public class CoreProperty {
 
     /**URL连接的后缀**/
     private String urlSuffix;
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getUrlPrefix() {
+        return urlPrefix;
+    }
+
+    public void setUrlPrefix(String urlPrefix) {
+        this.urlPrefix = urlPrefix;
+    }
+
+    public String getUrlSuffix() {
+        return urlSuffix;
+    }
+
+    public void setUrlSuffix(String urlSuffix) {
+        this.urlSuffix = urlSuffix;
+    }
 }
