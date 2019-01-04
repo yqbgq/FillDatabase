@@ -8,46 +8,46 @@ package properties;
  */
 public class CoreProperty {
     /**数据库的用户名**/
-    private String username;
+    private static String username;
 
     /**数据库的密码**/
-    private String password;
+    private static String password;
 
     /**URL连接的前缀**/
-    private String urlPrefix;
+    private static String urlPrefix;
 
     /**URL连接的后缀**/
-    private String urlSuffix;
+    private static String urlSuffix;
 
-    public String getUsername() {
+    public static String getUsername() {
         return username;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public static void setUsername(String username) {
+        CoreProperty.username = username;
     }
 
-    public String getPassword() {
+    public static String getPassword() {
         return password;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public static void setPassword(String password) {
+        CoreProperty.password = password;
     }
 
-    public String getUrlPrefix() {
+    public static String getUrlPrefix() {
         return urlPrefix;
     }
 
-    public void setUrlPrefix(String urlPrefix) {
-        this.urlPrefix = urlPrefix;
+    public static void setUrlPrefix(String urlPrefix) {
+        CoreProperty.urlPrefix = urlPrefix;
     }
 
-    public String getUrlSuffix() {
+    public static String getUrlSuffix() {
         return urlSuffix;
     }
 
-    public void setUrlSuffix(String urlSuffix) {
-        this.urlSuffix = urlSuffix;
+    public static void setUrlSuffix(String urlSuffix) {
+        CoreProperty.urlSuffix = urlSuffix;
     }
 }
