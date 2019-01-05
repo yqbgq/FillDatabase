@@ -14,10 +14,10 @@ public class CoreProperty {
     private  String password;
 
     /**URL连接的前缀**/
-    private  String urlPrefix;
+    private  String urlPrefix = "jdbc:mysql://127.0.0.1:3306/";
 
     /**URL连接的后缀**/
-    private  String urlSuffix;
+    private  String urlSuffix = "?useSSL=true&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8";
 
     public  String getUsername() {
         return this.username;
