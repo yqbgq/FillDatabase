@@ -6,7 +6,7 @@ import application.TaskClient;
  * @author 黄伟
  */
 public class ConcreteBuilder implements Builder {
-    private static TaskClient client = new TaskClient();
+    private TaskClient client = new TaskClient();
 
     //不允许使用通过new进行初始化
     private ConcreteBuilder(){}
@@ -18,26 +18,34 @@ public class ConcreteBuilder implements Builder {
      *
      * @return 返回经过构建的TaskClient的对象
      */
-    private static TaskClient builder(){
-        if(TaskClient.getPassword() == null && TaskClient.getUsername() == null){
+    private  TaskClient builder(){
+        if(this.client.getPassword() == null && this.client.getUsername() == null){
             System.out.println("构建错误！");
         }
         return client;
     }
 
-    public static void setUsername(String username){
-        TaskClient.setUsername(username);
+    @Override
+    public Builder setUsername(String username){
+        this.client.setUsername(username);
+        return this;
     }
 
-    public static void setPassword(String password){
-        TaskClient.setPassword(password);
+    @Override
+    public Builder setPassword(String password){
+        this.client.setPassword(password);
+        return this;
     }
 
-    public static void setUrlPrefix(String urlPrefix){
-        TaskClient.setUrlPrefix(urlPrefix);
+    @Override
+    public Builder setUrlPrefix(String urlPrefix){
+        this.client.setUrlPrefix(urlPrefix);
+        return this;
     }
 
-    public static void setUrlSuffix(String urlSuffix){
-        TaskClient.setUrlSuffix(urlSuffix);
+    @Override
+    public Builder setUrlSuffix(String urlSuffix){
+        this.client.setUrlSuffix(urlSuffix);
+        return this;
     }
 }
