@@ -677,7 +677,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546691369962" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546691637473" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -697,7 +697,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestBuilder.testFail">
+  <component name="RunManager" selected="JUnit.ConnectionTest.getConnection">
     <configuration name="ConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="database.ConnectionTest" />
       <module name="FillDatabase_test" />
@@ -786,9 +786,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConnectionTest.getConnection" />
         <item itemvalue="JUnit.TestBuilder.testFail" />
         <item itemvalue="JUnit.TestBuilder.testSuccess" />
-        <item itemvalue="JUnit.ConnectionTest.getConnection" />
         <item itemvalue="Application.ConnectionTest" />
         <item itemvalue="Gradle.FillDatabase [dependencies]" />
       </list>
