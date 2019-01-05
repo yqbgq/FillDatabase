@@ -60,8 +60,8 @@ public class ConcreteBuilder implements Builder {
     }
 
     @Override
-    public Builder addTask(String task, int numOfRows){
-        client.tempTaskList.put(task,numOfRows);
+    public Builder addTask(String database , String table, int numOfRows){
+        client.tempTaskList.put(database + "." + table ,numOfRows);
         return this;
     }
 }

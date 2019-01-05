@@ -20,5 +20,5 @@ public interface Builder {
 
     Builder setUsername(String username);
 
-    Builder addTask(String task, int numOfRows );
+    Builder addTask(String database , String table, int numOfRows);
 }
