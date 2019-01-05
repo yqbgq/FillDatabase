@@ -18,7 +18,7 @@ public class ConcreteBuilder implements Builder {
      *
      * @return 返回经过构建的TaskClient的对象
      */
-    private  TaskClient builder(){
+    public TaskClient build(){
         if(this.client.getPassword() == null && this.client.getUsername() == null){
             System.out.println("构建错误！");
         }
