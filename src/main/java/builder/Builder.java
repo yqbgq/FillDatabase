@@ -11,11 +11,11 @@ import application.TaskClient;
 public interface Builder {
     TaskClient build();
 
-    Builder setUrlPrefix();
+    Builder setUrlPrefix(String urlPrefix);
 
-    Builder setUrlSuffix();
+    Builder setUrlSuffix(String urlSuffix);
 
-    Builder setPassword();
+    Builder setPassword(String password);
 
-    Builder setUsername();
+    Builder setUsername(String username);
 }
