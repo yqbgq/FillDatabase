@@ -3,6 +3,10 @@ package builder;
 import application.TaskClient;
 import exception.BuildingException;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 /**
  * @author 黄伟
  */
@@ -18,6 +22,15 @@ public class ConcreteBuilder implements Builder {
     public TaskClient build() throws BuildingException{
         if(this.client.getPassword() == null && this.client.getUsername() == null){
             throw new BuildingException("请检查是否已经输入了数据库的用户名和密码！");
+        }
+        try {
+            Connection conn = DriverManager.getConnection(client.getUrlPrefix() + "mysql" + client.getUrlSuffix()
+                    , client.getUsername(), client.getPassword());
+            if(! conn.isValid(2)){
+                throw new BuildingException("在构造时会测试连接MySQL系统的数据库mysql检测用户名和密码，连接失败！");
+            }
+        }catch (SQLException e){
+            throw new BuildingException("在构造时会测试连接MySQL系统的数据库mysql检测用户名和密码，连接失败！");
         }
         return client;
     }
