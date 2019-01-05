@@ -9,15 +9,16 @@ import properties.CoreProperty;
  * @author 黄伟
  */
 public abstract class AbstractClient {
+    private CoreProperty property = new CoreProperty();
 
     //------------Setter and Getter--------------------------
-    public static void setUsername(String username){CoreProperty.setUsername(username);}
-    public static void setPassword(String password){CoreProperty.setPassword(password);}
-    public static void setUrlPrefix(String urlPrefix){CoreProperty.setUrlPrefix(urlPrefix);}
-    public static void setUrlSuffix(String urlSuffix){CoreProperty.setUrlSuffix(urlSuffix);}
-    public static String getUsername(){return CoreProperty.getUsername();}
-    public static String getPassword(){return CoreProperty.getPassword();}
-    public static String getUrlPrefix(){return CoreProperty.getUrlPrefix();}
-    public static String getUrlSuffix(){return CoreProperty.getUrlSuffix();}
+    public  void setUsername(String username){this.property.setUsername(username);}
+    public  void setPassword(String password){this.property.setPassword(password);}
+    public  void setUrlPrefix(String urlPrefix){this.property.setUrlPrefix(urlPrefix);}
+    public  void setUrlSuffix(String urlSuffix){this.property.setUrlSuffix(urlSuffix);}
+    public  String getUsername(){return this.property.getUsername();}
+    public  String getPassword(){return this.property.getPassword();}
+    public  String getUrlPrefix(){return this.property.getUrlPrefix();}
+    public  String getUrlSuffix(){return this.property.getUrlSuffix();}
     //------------Setter and Getter--------------------------
 }
