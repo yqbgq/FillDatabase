@@ -19,7 +19,25 @@ public class ConcreteBuilder implements Builder {
      * @return 返回经过构建的TaskClient的对象
      */
     private static TaskClient builder(){
-        
+        if(TaskClient.getPassword() == null && TaskClient.getUsername() == null){
+            System.out.println("构建错误！");
+        }
         return client;
+    }
+
+    public static void setUsername(String username){
+        TaskClient.setUsername(username);
+    }
+
+    public static void setPassword(String password){
+        TaskClient.setPassword(password);
+    }
+
+    public static void setUrlPrefix(String urlPrefix){
+        TaskClient.setUrlPrefix(urlPrefix);
+    }
+
+    public static void setUrlSuffix(String urlSuffix){
+        TaskClient.setUrlSuffix(urlSuffix);
     }
 }
