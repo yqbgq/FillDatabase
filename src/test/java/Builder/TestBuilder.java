@@ -2,13 +2,14 @@ package Builder;
 
 import application.TaskClient;
 import builder.ConcreteBuilder;
+import exception.BuildingException;
 import org.junit.Test;
 
 import static org.junit.Assert.assertNotNull;
 
 public class TestBuilder {
     @Test
-    public void testSuccess(){
+    public void testSuccess() throws BuildingException {
         ConcreteBuilder builder = new ConcreteBuilder();
 
         TaskClient client = builder
@@ -20,7 +21,7 @@ public class TestBuilder {
     }
 
     @Test
-    public void testFail(){
+    public void testFail() throws BuildingException{
         ConcreteBuilder builder = new ConcreteBuilder();
 
         TaskClient client = builder

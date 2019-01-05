@@ -14,6 +14,7 @@ public class ConnectionTest {
         String password = "root";
         try {
             Connection con = DriverManager.getConnection(url, username, password);
+            con.createBlob()
         }catch (SQLException e){
             e.printStackTrace();
         }
