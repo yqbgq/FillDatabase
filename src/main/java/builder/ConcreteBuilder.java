@@ -58,4 +58,10 @@ public class ConcreteBuilder implements Builder {
         this.client.setUrlSuffix(urlSuffix);
         return this;
     }
+
+    @Override
+    public Builder addTask(String task, int numOfRows){
+        client.tempTaskList.put(task,numOfRows);
+        return this;
+    }
 }

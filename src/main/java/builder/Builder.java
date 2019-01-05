@@ -19,4 +19,6 @@ public interface Builder {
     Builder setPassword(String password);
 
     Builder setUsername(String username);
+
+    Builder addTask(String task, int numOfRows );
 }
