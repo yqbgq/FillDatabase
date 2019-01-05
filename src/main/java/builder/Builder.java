@@ -1,6 +1,7 @@
 package builder;
 
 import application.TaskClient;
+import exception.BuildingException;
 
 /**
  * ConcreteBuilder的接口，规定了其中必须实现的一些方法
@@ -9,7 +10,7 @@ import application.TaskClient;
  *
  */
 public interface Builder {
-    TaskClient build();
+    TaskClient build() throws BuildingException;
 
     Builder setUrlPrefix(String urlPrefix);
 

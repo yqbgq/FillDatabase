@@ -1,6 +1,7 @@
 package builder;
 
 import application.TaskClient;
+import exception.BuildingException;
 
 /**
  * @author 黄伟
@@ -14,9 +15,9 @@ public class ConcreteBuilder implements Builder {
      *
      * @return 返回经过构建的TaskClient的对象
      */
-    public TaskClient build(){
+    public TaskClient build() throws BuildingException{
         if(this.client.getPassword() == null && this.client.getUsername() == null){
-            System.out.println("构建错误！");
+            throw new BuildingException("请检查是否已经输入了数据库的用户名和密码！");
         }
         return client;
     }
