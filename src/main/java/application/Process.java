@@ -20,7 +20,7 @@ public interface Process {
      * 开启所有行为，包括对任务的分析
      */
     void start();
-    
+
     /**
      * 开始对数据库进行插入
      *
