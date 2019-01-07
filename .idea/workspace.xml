@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b95fc52e-d768-423c-b605-a784b786e3fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/Process.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/application/TaskClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/TaskClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/builder/ConcreteBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/builder/ConcreteBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/database/MetaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -30,6 +29,17 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="java@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="java@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="java@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="java: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -92,7 +102,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="1" />
-          <entry key="java" value="38" />
+          <entry key="java" value="42" />
           <entry key="md" value="1" />
           <entry key="sql" value="1" />
         </counts>
@@ -100,7 +110,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="38" />
+          <entry key="JAVA" value="42" />
           <entry key="Markdown" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -108,14 +118,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="2" />
-          <entry key="java" value="4219" />
+          <entry key="java" value="4549" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="2" />
-          <entry key="JAVA" value="4219" />
+          <entry key="JAVA" value="4549" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
@@ -123,7 +133,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/application/Process.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
@@ -145,10 +155,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/task/ATask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/database/MetaTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/database/ConnectionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="19" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/application/TaskClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+            <state relative-caret-position="486">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,8 +202,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/task/Task.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="243">
+              <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -564,8 +607,9 @@
         <option value="$PROJECT_DIR$/src/main/java/builder/Builder.java" />
         <option value="$PROJECT_DIR$/src/test/java/Process/splitTaskTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/builder/ConcreteBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/TaskClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/application/Process.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/TaskClient.java" />
+        <option value="$PROJECT_DIR$/src/test/java/database/MetaTest.java" />
       </list>
     </option>
   </component>
@@ -662,6 +706,14 @@
             </path>
             <path>
               <item name="FillDatabase" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FillDatabase" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FillDatabase" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -675,7 +727,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546850656495" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546852821598" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -695,38 +747,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestBuilder.testSuccess">
-    <configuration name="ConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="database.ConnectionTest" />
-      <module name="FillDatabase_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="database.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FillDatabase [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="dependencies" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.MetaTest.getTable">
     <configuration name="ConnectionTest.getConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FillDatabase_test" />
       <extension name="coverage">
@@ -738,6 +759,38 @@
       <option name="PACKAGE_NAME" value="database" />
       <option name="MAIN_CLASS_NAME" value="database.ConnectionTest" />
       <option name="METHOD_NAME" value="getConnection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MetaTest.getMeta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FillDatabase_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="database" />
+      <option name="MAIN_CLASS_NAME" value="database.MetaTest" />
+      <option name="METHOD_NAME" value="getMeta" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MetaTest.getTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FillDatabase_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="database" />
+      <option name="MAIN_CLASS_NAME" value="database.MetaTest" />
+      <option name="METHOD_NAME" value="getTable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -776,19 +829,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.FillDatabase [dependencies]" />
       <item itemvalue="JUnit.ConnectionTest.getConnection" />
-      <item itemvalue="Application.ConnectionTest" />
       <item itemvalue="JUnit.TestBuilder.testSuccess" />
       <item itemvalue="JUnit.TestBuilder.testFail" />
+      <item itemvalue="JUnit.MetaTest.getMeta" />
+      <item itemvalue="JUnit.MetaTest.getTable" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MetaTest.getTable" />
+        <item itemvalue="JUnit.MetaTest.getMeta" />
         <item itemvalue="JUnit.TestBuilder.testSuccess" />
         <item itemvalue="JUnit.TestBuilder.testFail" />
         <item itemvalue="JUnit.ConnectionTest.getConnection" />
-        <item itemvalue="Application.ConnectionTest" />
-        <item itemvalue="Gradle.FillDatabase [dependencies]" />
       </list>
     </recent_temporary>
   </component>
@@ -806,50 +859,50 @@
       <workItem from="1546605400327" duration="2405000" />
       <workItem from="1546652610042" duration="128000" />
       <workItem from="1546688033181" duration="6581000" />
-      <workItem from="1546850638869" duration="801000" />
+      <workItem from="1546850638869" duration="2181000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConnectionTest_getConnection - 2019.01.04 at 20h 37m 16s.xml">
-      <configuration name="ConnectionTest.getConnection" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConnectionTest_getConnection - 2019.01.04 at 20h 37m 26s.xml">
-      <configuration name="ConnectionTest.getConnection" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConnectionTest_getConnection - 2019.01.04 at 20h 37m 36s.xml">
-      <configuration name="ConnectionTest.getConnection" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConnectionTest_getConnection - 2019.01.04 at 20h 37m 42s.xml">
-      <configuration name="ConnectionTest.getConnection" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestBuilder_testSuccess - 2019.01.05 at 20h 20m 52s.xml">
-      <configuration name="TestBuilder.testSuccess" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestBuilder_testFail - 2019.01.05 at 20h 21m 15s.xml">
-      <configuration name="TestBuilder.testFail" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestBuilder_testFail - 2019.01.05 at 20h 21m 27s.xml">
-      <configuration name="TestBuilder.testFail" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConnectionTest_getConnection - 2019.01.05 at 20h 33m 59s.xml">
-      <configuration name="ConnectionTest.getConnection" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestBuilder_testFail - 2019.01.05 at 20h 43m 43s.xml">
       <configuration name="TestBuilder.testFail" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestBuilder_testSuccess - 2019.01.05 at 20h 43m 47s.xml">
       <configuration name="TestBuilder.testSuccess" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MetaTest_getMeta - 2019.01.07 at 17h 03m 43s.xml">
+      <configuration name="MetaTest.getMeta" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MetaTest_getMeta - 2019.01.07 at 17h 09m 11s.xml">
+      <configuration name="MetaTest.getMeta" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MetaTest_getMeta - 2019.01.07 at 17h 13m 24s.xml">
+      <configuration name="MetaTest.getMeta" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MetaTest_getMeta - 2019.01.07 at 17h 15m 22s.xml">
+      <configuration name="MetaTest.getMeta" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MetaTest_getTable - 2019.01.07 at 17h 15m 52s.xml">
+      <configuration name="MetaTest.getTable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MetaTest_getTable - 2019.01.07 at 17h 16m 13s.xml">
+      <configuration name="MetaTest.getTable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MetaTest_getTable - 2019.01.07 at 17h 16m 21s.xml">
+      <configuration name="MetaTest.getTable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MetaTest_getTable - 2019.01.07 at 17h 16m 59s.xml">
+      <configuration name="MetaTest.getTable" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12745000" />
+    <option name="totallyTimeSpent" value="14125000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26502147" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26502147" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -858,7 +911,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32918552" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32918552" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -876,7 +929,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="right" id="Gradle" order="6" weight="0.3299356" />
-      <window_info anchor="right" id="Database" order="7" weight="0.3299356" />
+      <window_info active="true" anchor="right" id="Database" order="7" visible="true" weight="0.11802575" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
@@ -937,13 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/database/ConnectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Builder/TestBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -959,16 +1005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task/ATask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -996,13 +1032,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/task/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/builder/ConcreteBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
@@ -1015,11 +1044,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/application/TaskClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        <state relative-caret-position="486">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/task/ATask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/database/ConnectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="19" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1027,6 +1080,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/database/MetaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
