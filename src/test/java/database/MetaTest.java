@@ -42,7 +42,7 @@ public class MetaTest {
                 int digits = colRet.getInt("DECIMAL_DIGITS");
                 int nullable = colRet.getInt("NULLABLE");
                 System.out.println(columnName+" "+columnType+" "+datasize+" "+digits+" "+
-                        nullable);
+                        nullable + colRet.getString("IS_AUTOINCREMENT"));
             }
 
         }catch (SQLException e){

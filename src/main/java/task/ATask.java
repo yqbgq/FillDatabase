@@ -30,4 +30,8 @@ public abstract class ATask {
     public ArrayList<Type> getCol() { return col; }
     public void setCol(ArrayList<Type> col) { this.col = col; }
     //----------Getter and Setter----------------
+
+    public void addField(Type type){this.col.add(type);}
+    public int getSize(){return this.col.size();}
+    public Type getType(int index){return this.col.get(index);}
 }

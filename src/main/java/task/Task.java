@@ -1,5 +1,7 @@
 package task;
 
+import types.Type;
+
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -12,5 +14,17 @@ public class Task extends ATask{
         this.setDatabase(database);
         this.setTable(table);
         this.setNumOfRows(new AtomicInteger(numOfRows));
+    }
+
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("该任务指定数据库为" + getDatabase() + "\n");
+        sb.append("该任务指定数据表为" + getTable() + "\n");
+        for(int i=0;i<getSize();i++){
+            Type temp = getType(i);
+            sb.append("列名" + temp.getName() +"\n");
+        }
+        return sb.toString();
     }
 }

@@ -2,6 +2,9 @@ package process;
 
 import task.Task;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class TaskClient extends AbstractClient implements Process{
@@ -24,7 +27,12 @@ public class TaskClient extends AbstractClient implements Process{
 
     @Override
     public void start() {
-
+        try {
+            Connection con = DriverManager.getConnection(getUrlPrefix() + "mysql" + getUrlSuffix(),
+                    getUsername(), getPassword());
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
     }
 
     @Override
