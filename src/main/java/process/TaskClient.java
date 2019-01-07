@@ -1,9 +1,8 @@
-package application;
+package process;
 
 import task.Task;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class TaskClient extends AbstractClient implements Process{
     /**设定最大可以开的线程数量，据说这样是最好的**/

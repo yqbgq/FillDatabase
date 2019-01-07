@@ -1,6 +1,6 @@
 package Builder;
 
-import application.TaskClient;
+import process.TaskClient;
 import builder.ConcreteBuilder;
 import exception.BuildingException;
 import org.junit.Test;

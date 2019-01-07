@@ -1,4 +1,4 @@
-package application;
+package process;
 
 import properties.CoreProperty;
 

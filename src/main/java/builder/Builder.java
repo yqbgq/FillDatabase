@@ -1,6 +1,6 @@
 package builder;
 
-import application.TaskClient;
+import process.TaskClient;
 import exception.BuildingException;
 
 /**
