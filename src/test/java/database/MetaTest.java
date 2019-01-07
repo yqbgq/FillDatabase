@@ -34,7 +34,7 @@ public class MetaTest {
         try {
             Connection con = DriverManager.getConnection(url, username, password);
             DatabaseMetaData m_DBMetaData = con.getMetaData();
-            ResultSet colRet = m_DBMetaData.getColumns(null,"%", "course","%");
+            ResultSet colRet = m_DBMetaData.getColumns(null,"%", "book","%");
             while(colRet.next()) {
                 String columnName = colRet.getString("COLUMN_NAME");
                 String columnType = colRet.getString("TYPE_NAME");
