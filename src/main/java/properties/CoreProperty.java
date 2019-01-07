@@ -16,8 +16,11 @@ public class CoreProperty {
     /**URL连接的前缀**/
     private  String urlPrefix = "jdbc:mysql://127.0.0.1:3306/";
 
-    /**URL连接的后缀**/
+    /**URL连接的后缀，后面的这些属性是为了让MySQL驱动不报错，所以必须设置使用SSL，设置时区以及编码**/
     private  String urlSuffix = "?useSSL=true&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8";
+
+    /**设定最大可以开的线程数量，据说这样是最好的**/
+    private int numOfThreads = Runtime.getRuntime().availableProcessors() * 2 + 2;
 
     public  String getUsername() {
         return this.username;
@@ -50,4 +53,8 @@ public class CoreProperty {
     public  void setUrlSuffix(String urlSuffix) {
         this.urlSuffix = urlSuffix;
     }
+
+    public int getNumOfThreads() { return numOfThreads; }
+
+    public void setNumOfThreads(int numOfThreads) { this.numOfThreads = numOfThreads; }
 }
