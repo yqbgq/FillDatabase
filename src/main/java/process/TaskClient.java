@@ -32,7 +32,15 @@ public class TaskClient extends AbstractClient implements Process{
              con= DriverManager.getConnection(getUrlPrefix() + "mysql" + getUrlSuffix(),
                     getUsername(), getPassword());
             for(Task temp : tempTaskList){
-                System.out.println(TaskAnalyze.analyze(temp,con));
+                if(temp.getTable() != null){
+                    taskList.add(TaskAnalyze.analyze(temp,con));
+                }else{
+                    ArrayList<Task> x = TaskAnalyze.analyzeDatabase(temp,con);
+                    taskList.addAll(x);
+                }
+            }
+            for(Task x : taskList){
+                System.out.println(x);
             }
         }catch (SQLException e){
             e.printStackTrace();

@@ -4,10 +4,11 @@ import exception.MissTableException;
 import task.Task;
 import types.Char;
 import types.Int;
-import types.Type;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
 
 /**
  * 分析每个任务，如果指定了表名，则构建字段信息
@@ -51,5 +52,28 @@ public class TaskAnalyze {
         }else {
             return task;
         }
+    }
+
+    public static ArrayList<Task> analyzeDatabase(Task task, Connection con){
+        ArrayList<Task> result = new ArrayList<>();
+        try {
+            DatabaseMetaData metaData = con.getMetaData();
+            ResultSet rs = metaData.getTables("java", null, null, new String[]{"TABLE"});
+            ArrayList<String> tables = new ArrayList<>();
+            while (rs.next()) {
+                tables.add(rs.getString(3));
+            }
+            for(String x : tables){
+                Task temp = new Task(task.getDatabase(),x,task.getNumOfRows().get());
+                try {
+                    result.add(analyze(temp, con));
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return result;
     }
 }

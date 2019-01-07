@@ -9,11 +9,21 @@ import java.util.concurrent.atomic.AtomicInteger;
  *
  * @author 黄伟
  */
-public class Task extends ATask{
+public class Task extends ATask implements Cloneable{
     public Task(String database, String table ,int numOfRows){
         this.setDatabase(database);
         this.setTable(table);
         this.setNumOfRows(new AtomicInteger(numOfRows));
+    }
+
+    public Object clone(){
+        Object obj = null;
+        try{
+            obj = super.clone();
+        }catch(CloneNotSupportedException ex){
+            ex.printStackTrace();
+        }
+        return obj;
     }
 
     @Override
