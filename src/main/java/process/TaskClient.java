@@ -27,12 +27,19 @@ public class TaskClient extends AbstractClient implements Process{
 
     @Override
     public void start() {
+        Connection con;
         try {
-            Connection con = DriverManager.getConnection(getUrlPrefix() + "mysql" + getUrlSuffix(),
+             con= DriverManager.getConnection(getUrlPrefix() + "mysql" + getUrlSuffix(),
                     getUsername(), getPassword());
+            for(Task temp : tempTaskList){
+                System.out.println(TaskAnalyze.analyze(temp,con));
+            }
         }catch (SQLException e){
             e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
         }
+
     }
 
     @Override

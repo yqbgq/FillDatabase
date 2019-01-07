@@ -31,18 +31,17 @@ public class TaskAnalyze {
         //获取指定数据表的元数据
         ResultSet colRet = metaData.getColumns(task.getDatabase(), "%", task.getTable(),"%");
         while(colRet.next()) {
-            Type type;
             String columnName = colRet.getString("COLUMN_NAME");
             String columnType = colRet.getString("TYPE_NAME");
             int size = colRet.getInt("COLUMN_SIZE");
             int nullable = colRet.getInt("NULLABLE");
             boolean autoincrement = colRet.getString("IS_AUTOINCREMENT").equalsIgnoreCase("YES");
             if(columnType.toLowerCase().contains("int")){
-                type = new Int(columnName,size, nullable == 1,autoincrement);
+                Int type= new Int(columnName,size, nullable == 1,autoincrement);
                 task.addField(type);
             }else{
                 if(columnType.toLowerCase().contains("char")){
-                    type = new Char(columnName,size, nullable == 1);
+                    Char type = new Char(columnName,size, nullable == 1);
                     task.addField(type);
                 }
             }

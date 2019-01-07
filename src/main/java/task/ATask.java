@@ -18,7 +18,7 @@ public abstract class ATask {
     /**任务需要写入的行数**/
     private AtomicInteger numOfRows;
     /**任务指向的表每一列的属性**/
-    private ArrayList<Type> col ;
+    private ArrayList<Type> col = new ArrayList<>();
 
     //----------Getter and Setter----------------
     public String getDatabase() { return database; }
