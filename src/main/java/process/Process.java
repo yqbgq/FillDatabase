@@ -1,6 +1,5 @@
 package process;
 
-import task.Task;
 
 public interface Process {
     /**
