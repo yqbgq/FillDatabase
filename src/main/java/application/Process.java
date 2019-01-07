@@ -10,11 +10,10 @@ public interface Process {
      *
      * 最后还应该获取表中每一列的信息
      *
-     * @param task  由用户传入的任务名，有三种情况
-     * @param numOfRows 想要写入多少行
+     * @param task  由用户传入的任务类
      * @return 返回被拆分完成的任务
      */
-    Task analyze(String task , int numOfRows);
+    Task analyze(Task task);
 
     /**
      * 开启所有行为，包括对任务的分析

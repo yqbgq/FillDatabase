@@ -2,6 +2,7 @@ package builder;
 
 import application.TaskClient;
 import exception.BuildingException;
+import task.Task;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -61,7 +62,8 @@ public class ConcreteBuilder implements Builder {
 
     @Override
     public Builder addTask(String database , String table, int numOfRows){
-        client.tempTaskList.put(database + "." + table ,numOfRows);
+        Task task = new Task(database,table,numOfRows);
+        client.tempTaskList.add(task);
         return this;
     }
 }
