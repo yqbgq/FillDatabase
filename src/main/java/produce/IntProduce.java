@@ -3,7 +3,7 @@ package produce;
 import java.util.Random;
 
 public class IntProduce {
-    public String produce(int maxLength){
+    public static String produce(int maxLength){
         Random random = new Random();
         StringBuilder sb = new StringBuilder();
         while(true){

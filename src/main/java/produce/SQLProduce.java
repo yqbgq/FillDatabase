@@ -15,8 +15,11 @@ public class SQLProduce {
         for(Type temp : task.getCol()){
             if(temp.getType().equals("int")){
                 if(!((Int)temp).isAutoIncrease()){
-
+                    prefixSql = prefixSql +  temp.getName() + ",";
+                    suffixSql = suffixSql + IntProduce.produce(temp.getLength()) + ",";
                 }
+            }else{
+
             }
         }
 
