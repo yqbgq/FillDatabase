@@ -1,5 +1,5 @@
 package produce;
 
-public interface IProduce<E> {
-     E produce(int maxLength);
+public interface IProduce {
+     String produce(int maxLength);
 }

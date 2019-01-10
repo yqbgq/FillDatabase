@@ -2,7 +2,7 @@ package produce;
 
 import java.util.Random;
 
-public class CharProduce implements IProduce<String>{
+public class CharProduce implements IProduce{
 
     @Override
     public String produce(int maxLength){
