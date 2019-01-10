@@ -5,5 +5,6 @@ public class Char extends Type{
         this.setName(name);
         this.setLength(length);
         this.setAllowEmpty(allowEmpty);
+        this.setType("char");
     }
 }

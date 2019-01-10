@@ -6,6 +6,7 @@ public class Int extends Type{
         this.setLength(length);
         this.setAllowEmpty(allowEmpty);
         this.setAutoIncrease(allowEmpty);
+        this.setType("int");
     }
 
     private boolean autoIncrease;

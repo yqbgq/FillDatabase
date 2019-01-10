@@ -4,6 +4,7 @@ public abstract class Type {
     private String name;
     private int length;
     private boolean allowEmpty;
+    private String type;
 
     public String getName() {
         return name;
@@ -27,5 +28,13 @@ public abstract class Type {
 
     public void setAllowEmpty(boolean allowEmpty) {
         this.allowEmpty = allowEmpty;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
