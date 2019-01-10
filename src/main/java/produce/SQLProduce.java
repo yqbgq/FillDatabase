@@ -10,17 +10,17 @@ public class SQLProduce {
     public static String getSQL(Task task){
         String database = task.getDatabase();
         String table = task.getTable();
-        String prefixSql = "insert into " + database + "." + table + " (";
+        String prefixSql = "insert into " + database + "." + table + "(";
         String suffixSql = "values(";
         for(Type temp : task.getCol()){
             if(temp.getType().equals("int")){
                 if(!((Int)temp).isAutoIncrease()){
                     prefixSql = prefixSql +  temp.getName() ;
-                    suffixSql = suffixSql + IntProduce.produce(temp.getLength()) ;
+                    suffixSql = suffixSql + "'" + IntProduce.produce(temp.getLength()) + "'";
                 }
             }else{
-                prefixSql = prefixSql +  temp.getName() + ",";
-                suffixSql = suffixSql + IntProduce.produce(temp.getLength()) + ",";
+                prefixSql = prefixSql +  temp.getName() ;
+                suffixSql = suffixSql + "'" +  CharProduce.produce(temp.getLength())  + "'";
 
             }
             if(task.getCol().indexOf(temp) != task.getCol().size()-1){
@@ -31,6 +31,6 @@ public class SQLProduce {
         prefixSql += ")";
         suffixSql += ")";
 
-        return prefixSql + suffixSql;
+        return prefixSql + " " + suffixSql;
     }
 }
