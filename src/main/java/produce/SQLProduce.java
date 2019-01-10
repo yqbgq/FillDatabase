@@ -1,6 +1,7 @@
 package produce;
 
 import task.Task;
+import types.Int;
 import types.Type;
 
 public class SQLProduce {
@@ -9,11 +10,16 @@ public class SQLProduce {
     public static String getSQL(Task task){
         String database = task.getDatabase();
         String table = task.getTable();
-        String sql = "insert into " + database + "." + "table" + "(";
+        String prefixSql = "insert into " + database + "." + table + " (";
+        String suffixSql = "values(";
         for(Type temp : task.getCol()){
+            if(temp.getType().equals("int")){
+                if(!((Int)temp).isAutoIncrease()){
 
+                }
+            }
         }
 
-        return sql;
+        return prefixSql + suffixSql;
     }
 }
