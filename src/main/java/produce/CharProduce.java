@@ -2,10 +2,10 @@ package produce;
 
 import java.util.Random;
 
-public class CharProduce implements IProduce{
+public class CharProduce extends IProduce{
 
     @Override
-    public String produce(int maxLength){
+    public  String produce(int maxLength){
         StringBuilder sb = new StringBuilder();
         Random random = new Random();
         int count = random.nextInt(maxLength);
@@ -14,4 +14,6 @@ public class CharProduce implements IProduce{
         }
         return sb.toString();
     }
+
+
 }

@@ -1,5 +1,7 @@
 package produce;
 
-public interface IProduce {
-     String produce(int maxLength);
+public abstract class IProduce {
+     protected  String produce(int maxLength){return "";}
+
+
 }
