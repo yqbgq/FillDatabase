@@ -18,7 +18,7 @@ public class TestSQLProduce {
         try {
             Connection con = DriverManager.getConnection(url, username, password);
             task = TaskAnalyze.analyze(task,con);
-            System.out.println(SQLProduce.getSQL(task));
+            //System.out.println(SQLProduce.getSQL(task));
         }catch (Exception e){
             e.printStackTrace();
         }

@@ -34,4 +34,5 @@ public abstract class ATask {
     public void addField(Type type){this.col.add(type);}
     public int getSize(){return this.col.size();}
     public Type getType(int index){return this.col.get(index);}
+    public void reduce(){this.numOfRows.addAndGet(-1);}
 }

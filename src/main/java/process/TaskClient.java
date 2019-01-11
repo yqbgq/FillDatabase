@@ -33,10 +33,11 @@ public class TaskClient extends AbstractClient implements Process{
     @Override
     public void start() {
         this.analyze();
+        this.insert();
     }
 
     @Override
     public void insert() {
-
+        
     }
 }

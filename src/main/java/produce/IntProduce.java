@@ -1,7 +1,7 @@
 package produce;
 
 import java.util.Random;
-
+//TODO 判断非空与否能否创建是空的，而且这个好像判断长度有些不准确
 /**
  * 默认的整型字段生成器
  *
@@ -17,6 +17,7 @@ public class IntProduce implements IProduce{
     public  String produce(int maxLength){
         Random random = new Random();
         StringBuilder sb = new StringBuilder();
+        sb.append(random.nextInt());
         while(true){
             int temp = random.nextInt();
             if(sb.length() + String.valueOf(temp).length() > maxLength){
