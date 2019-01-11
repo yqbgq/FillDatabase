@@ -18,7 +18,7 @@ import java.util.ArrayList;
  * @author 黄伟
  *
  */
-class TaskAnalyze {
+public class TaskAnalyze {
     /**
      * 静态方法，作为类的工具方法，用来分析单个指定了表名的任务
      *
@@ -27,7 +27,7 @@ class TaskAnalyze {
      * @return 构建完成的任务
      * @throws Exception 如果数据表不存在或者出现SQLException则抛出错误
      */
-    static Task analyze(Task task, Connection conn) throws Exception {
+    public static Task analyze(Task task, Connection conn) throws Exception {
         DatabaseMetaData metaData = conn.getMetaData();//获取数据库的元数据
         //获取指定数据表的元数据
         ResultSet colRet = metaData.getColumns(task.getDatabase(), "%", task.getTable(),"%");
@@ -62,7 +62,7 @@ class TaskAnalyze {
      * @param con 数据库连接
      * @return 返回一个任务的集合
      */
-    static ArrayList<Task> analyzeDatabase(Task task, Connection con){
+    public static ArrayList<Task> analyzeDatabase(Task task, Connection con){
         ArrayList<Task> result = new ArrayList<>();
         try {
             DatabaseMetaData metaData = con.getMetaData();
