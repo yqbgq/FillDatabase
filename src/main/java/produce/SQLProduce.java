@@ -1,13 +1,13 @@
 package produce;
 
+import properties.CoreProperty;
 import task.Task;
 import types.Int;
 import types.Type;
 
-public class SQLProduce {
-    private SQLProduce(){}
-
-    public static String getSQL(Task task){
+public class SQLProduce implements ISQLProduce{
+    @Override
+    public  String getSQL(Task task, CoreProperty property){
         String database = task.getDatabase();
         String table = task.getTable();
         String prefixSql = "insert into " + database + "." + table + "(";
@@ -16,11 +16,11 @@ public class SQLProduce {
             if(temp.getType().equals("int")){
                 if(!((Int)temp).isAutoIncrease()){
                     prefixSql = prefixSql +  temp.getName() ;
-                    suffixSql = suffixSql + "'" + IntProduce.produce(temp.getLength()) + "'";
+                    suffixSql = suffixSql + "'" + property.getIntProduce().produce(temp.getLength()) + "'";
                 }
             }else{
                 prefixSql = prefixSql +  temp.getName() ;
-                suffixSql = suffixSql + "'" +  CharProduce.produce(temp.getLength())  + "'";
+                suffixSql = suffixSql + "'" +  property.getCharProduce().produce(temp.getLength())  + "'";
 
             }
             if(task.getCol().indexOf(temp) != task.getCol().size()-1){

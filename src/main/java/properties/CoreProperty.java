@@ -1,8 +1,6 @@
 package properties;
 
-import produce.CharProduce;
-import produce.IProduce;
-import produce.IntProduce;
+import produce.*;
 
 /**
  * 核心配置类，持有和程序行为相关的一些配置信息
@@ -31,6 +29,9 @@ public class CoreProperty {
 
     /**默认的字符串生成器**/
     private IProduce charProduce = new CharProduce();
+
+    /**默认的SQL生成器**/
+    private ISQLProduce sqlProduce = new SQLProduce();
 
     public  String getUsername() {
         return this.username;
@@ -82,5 +83,13 @@ public class CoreProperty {
 
     public void setCharProduce(IProduce charProduce) {
         this.charProduce = charProduce;
+    }
+
+    public ISQLProduce getSqlProduce() {
+        return sqlProduce;
+    }
+
+    public void setSqlProduce(ISQLProduce sqlProduce) {
+        this.sqlProduce = sqlProduce;
     }
 }
