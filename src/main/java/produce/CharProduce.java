@@ -8,7 +8,7 @@ public class CharProduce {
         Random random = new Random();
         int count = random.nextInt(maxLength);
         for(int i=0;i<count;i++){
-            sb.append((char)random.nextInt());
+            sb.append((char)('a' + random.nextInt(24)));
         }
         return sb.toString();
     }
