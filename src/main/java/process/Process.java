@@ -1,5 +1,10 @@
 package process;
 
+/**
+ * 该接口规定了Client 运行的相关方法
+ *
+ * @author 黄伟
+ */
 
 public interface Process {
     /**

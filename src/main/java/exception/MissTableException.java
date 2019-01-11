@@ -2,6 +2,8 @@ package exception;
 
 /**
  * 当无法找到指定数据表时，报错
+ *
+ * @author 黄伟
  */
 public class MissTableException extends Exception {
     /**

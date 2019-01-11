@@ -33,6 +33,7 @@ public class CoreProperty {
     /**默认的SQL生成器**/
     private ISQLProduce sqlProduce = new SQLProduce();
 
+    //------------------Setter and Getter ----------------------------------------
     public  String getUsername() {
         return this.username;
     }
@@ -92,4 +93,5 @@ public class CoreProperty {
     public void setSqlProduce(ISQLProduce sqlProduce) {
         this.sqlProduce = sqlProduce;
     }
+    //------------------Setter and Getter ----------------------------------------
 }

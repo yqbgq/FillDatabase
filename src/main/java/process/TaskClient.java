@@ -38,6 +38,6 @@ public class TaskClient extends AbstractClient implements Process{
 
     @Override
     public void insert() {
-        
+
     }
 }
