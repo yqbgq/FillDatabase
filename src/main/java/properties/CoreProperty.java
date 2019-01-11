@@ -1,7 +1,11 @@
 package properties;
 
+import produce.CharProduce;
+import produce.IProduce;
+import produce.IntProduce;
+
 /**
- * 核心配置类，持有和数据库相关的一些配置信息
+ * 核心配置类，持有和程序行为相关的一些配置信息
  *
  * @author 黄伟
  *
@@ -21,6 +25,12 @@ public class CoreProperty {
 
     /**设定最大可以开的线程数量，据说这样是最好的**/
     private int numOfThreads = Runtime.getRuntime().availableProcessors() * 2 + 2;
+
+    /**默认的整型生成器**/
+    private IProduce intProduce = new IntProduce();
+
+    /**默认的字符串生成器**/
+    private IProduce charProduce = new CharProduce();
 
     public  String getUsername() {
         return this.username;
@@ -57,4 +67,20 @@ public class CoreProperty {
     public int getNumOfThreads() { return numOfThreads; }
 
     public void setNumOfThreads(int numOfThreads) { this.numOfThreads = numOfThreads; }
+
+    public IProduce getIntProduce() {
+        return intProduce;
+    }
+
+    public void setIntProduce(IProduce intProduce) {
+        this.intProduce = intProduce;
+    }
+
+    public IProduce getCharProduce() {
+        return charProduce;
+    }
+
+    public void setCharProduce(IProduce charProduce) {
+        this.charProduce = charProduce;
+    }
 }

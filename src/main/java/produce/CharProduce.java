@@ -2,8 +2,9 @@ package produce;
 
 import java.util.Random;
 
-public class CharProduce {
-    public  static String produce(int maxLength){
+public class CharProduce implements IProduce{
+    @Override
+    public   String produce(int maxLength){
         StringBuilder sb = new StringBuilder();
         Random random = new Random();
         int count = random.nextInt(maxLength);
