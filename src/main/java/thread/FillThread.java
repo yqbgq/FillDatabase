@@ -6,6 +6,8 @@ import task.Task;
 import java.sql.*;
 
 public class FillThread extends AThread {
+    final int NUMOFBATCH = 40;
+
     public FillThread(Task task, CoreProperty property) {
         super(task, property);
     }
@@ -28,7 +30,7 @@ public class FillThread extends AThread {
                     ps.executeBatch();
                     conn.commit();
                 }else{
-                    if(numOfBatch < 10){
+                    if(numOfBatch < NUMOFBATCH){
                         numOfBatch ++;
                         ps.addBatch(sql);
                     }else{
