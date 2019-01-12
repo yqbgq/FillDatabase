@@ -12,7 +12,7 @@ import java.sql.Connection;
  */
 public abstract class AbstractClient {
     /**持有的核心配置类**/
-    private CoreProperty property = new CoreProperty();
+    protected CoreProperty property = new CoreProperty();
 
     /**持有的数据库连接**/
     private Connection conn ;

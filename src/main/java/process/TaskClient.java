@@ -1,10 +1,14 @@
 package process;
 
 import task.Task;
+import thread.FillThread;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.ArrayList;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class TaskClient extends AbstractClient implements Process{
     /**持有的临时任务列表，确保在构建时较快，在start()方法被调用之后转换成Task对象列表**/
@@ -38,6 +42,13 @@ public class TaskClient extends AbstractClient implements Process{
 
     @Override
     public void insert() {
-
+        ExecutorService exe = Executors.newFixedThreadPool(property.getNumOfThreads());
+        ArrayList<FillThread> threads = new ArrayList<>(taskList.size());
+        for(Task task : taskList){
+            threads.add(new FillThread(task,property));
+        }
+        for(Thread t : threads){
+            exe.execute(t);
+        }
     }
 }
