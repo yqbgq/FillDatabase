@@ -45,6 +45,8 @@ public class CoreProperty {
     /**默认的SQL生成器**/
     private ISQLProduce sqlProduce = new SQLProduce();
 
+    /** 插入线程执行时，每个PreparedStatement携带的SQL语句数量**/
+    private int numOfSQL = 40;
     //------------------Setter and Getter ----------------------------------------
     public  String getUsername() {
         return this.username;
@@ -102,5 +104,7 @@ public class CoreProperty {
     public void setDateProduce(IProduce dateProduce) {
         DateProduce = dateProduce;
     }
+    public int getNumOfSQL() {return numOfSQL; }
+    public void setNumOfSQL(int numOfSQL) { this.numOfSQL = numOfSQL; }
     //------------------Setter and Getter ----------------------------------------
 }

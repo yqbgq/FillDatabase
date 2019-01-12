@@ -53,4 +53,11 @@ public interface Builder {
      * @return 构造中的Builder
      */
     Builder addTask(String database , String table, int numOfRows);
+
+    /**
+     * 设置配置类中属性numOfSQL的值，默认为40
+     * @param num 想要修改的值
+     * @return 构造中的Builder
+     */
+    Builder setNumOfSQL(int num);
 }

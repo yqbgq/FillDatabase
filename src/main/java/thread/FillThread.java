@@ -6,7 +6,7 @@ import task.Task;
 import java.sql.*;
 
 public class FillThread extends AThread {
-    final int NUMOFBATCH = 40;
+
 
     public FillThread(Task task, CoreProperty property) {
         super(task, property);
@@ -15,6 +15,7 @@ public class FillThread extends AThread {
     @Override
     public void run() {
         System.out.println("开始任务"+task.getDatabase()+"."+task.getTable());
+        int numOfSQL = property.getNumOfSQL();
         try(Connection conn = DriverManager.getConnection(property.getUrlPrefix()
                 + "fill" + property.getUrlSuffix(),
                 property.getUsername(), property.getPassword());
@@ -30,7 +31,7 @@ public class FillThread extends AThread {
                     ps.executeBatch();
                     conn.commit();
                 }else{
-                    if(numOfBatch < NUMOFBATCH){
+                    if(numOfBatch < numOfSQL){
                         numOfBatch ++;
                         ps.addBatch(sql);
                     }else{

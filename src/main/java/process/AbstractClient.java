@@ -21,5 +21,6 @@ public abstract class AbstractClient {
     public  String getPassword(){return this.property.getPassword();}
     public  String getUrlPrefix(){return this.property.getUrlPrefix();}
     public  String getUrlSuffix(){return this.property.getUrlSuffix();}
+    public void setNumOfSql(int num){this.property.setNumOfSQL(num);}
     //------------Setter and Getter--------------------------
 }

@@ -2,7 +2,6 @@ package process;
 
 import task.Task;
 import thread.FillThread;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.ArrayList;

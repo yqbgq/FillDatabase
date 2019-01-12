@@ -66,4 +66,10 @@ public class ConcreteBuilder implements Builder {
         client.tempTaskList.add(task);
         return this;
     }
+
+    @Override
+    public Builder setNumOfSQL(int num) {
+        this.client.setNumOfSql(num);
+        return this;
+    }
 }
