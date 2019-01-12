@@ -33,6 +33,9 @@ public class CoreProperty {
     /**默认的浮点生成器**/
     private IProduce floatProduce = new FloatProduce();
 
+    /**默认的日期生成器**/
+    private IProduce DateProduce = new DateProduce();
+
     /**默认的SQL生成器**/
     private ISQLProduce sqlProduce = new SQLProduce();
 
@@ -105,5 +108,12 @@ public class CoreProperty {
         this.floatProduce = floatProduce;
     }
 
-    //------------------Setter and Getter ----------------------------------------
+    public IProduce getDateProduce() {
+        return DateProduce;
+    }
+
+    public void setDateProduce(IProduce dateProduce) {
+        DateProduce = dateProduce;
+    }
+//------------------Setter and Getter ----------------------------------------
 }

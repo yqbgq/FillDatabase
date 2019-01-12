@@ -17,6 +17,7 @@ public class TestDemo {
                 .setPassword("root")
                 .addTask("fill","test1",100)
                 .addTask("fill","test2",500)
+                .addTask("fill","test3",500)
                 .build();
         client.start();
     }

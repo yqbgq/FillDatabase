@@ -3,6 +3,7 @@ package process;
 import exception.MissTableException;
 import task.Task;
 import types.Char;
+import types.Date;
 import types.FloatType;
 import types.Int;
 import java.sql.Connection;
@@ -49,6 +50,11 @@ public class TaskAnalyze {
                     if(columnType.toLowerCase().contains("float") || columnType.toLowerCase().contains("double")){
                         FloatType type = new FloatType(columnName,size, nullable == 1);
                         task.addField(type);
+                    }else{
+                        if(columnType.toLowerCase().contains("date")){
+                            Date type = new Date(columnName,size, nullable == 1);
+                            task.addField(type);
+                        }
                     }
                 }
             }

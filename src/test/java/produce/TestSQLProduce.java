@@ -12,7 +12,7 @@ import java.sql.SQLException;
 public class TestSQLProduce {
     @Test
     public void test(){
-        Task task = new Task("fill","test1",10);
+        Task task = new Task("fill","test3",10);
         String url = "jdbc:mysql://127.0.0.1:3306/fill?useSSL=true&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8";
         String username = "root";
         String password = "root";

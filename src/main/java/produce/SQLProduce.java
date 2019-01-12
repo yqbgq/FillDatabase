@@ -34,8 +34,13 @@ public class SQLProduce implements ISQLProduce{
                     prefixSql = prefixSql + temp.getName();
                     suffixSql = suffixSql + "'" + property.getCharProduce().produce(temp.getLength()) + "'";
                 }else{
-                    prefixSql = prefixSql + temp.getName();
-                    suffixSql = suffixSql + "'" + property.getFloatProduce().produce(temp.getLength()) + "'";
+                    if(temp.getType().equals("float")) {
+                        prefixSql = prefixSql + temp.getName();
+                        suffixSql = suffixSql + "'" + property.getFloatProduce().produce(temp.getLength()) + "'";
+                    }else{
+                        prefixSql = prefixSql + temp.getName();
+                        suffixSql = suffixSql + "'" + property.getDateProduce().produce(temp.getLength()) + "'";
+                    }
                 }
             }
             if(task.getCol().indexOf(temp) != task.getCol().size()-1){
