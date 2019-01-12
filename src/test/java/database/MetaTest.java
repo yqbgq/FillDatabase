@@ -59,15 +59,36 @@ public class MetaTest {
         try {
             Connection con = DriverManager.getConnection(url, username, password);
             DatabaseMetaData m_DBMetaData = con.getMetaData();
-            ResultSet colRet = m_DBMetaData.getColumns(null,"%", "test1","%");
+            ResultSet colRet = m_DBMetaData.getColumns(null,"%", "test5","%");
             while(colRet.next()) {
                 System.out.println("====================");
-                for(int i=1;i<24;i++){
+                for(int i=1;i<30;i++){
 
                     System.out.println(colRet.getString(i));
                 }
                 System.out.println("====================");
             }
+
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
+
+    //测试表中的所有原属性
+    @Test
+    public void anotherGet(){
+        String url = "jdbc:mysql://127.0.0.1:3306/fill?useSSL=true&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8";
+        String username = "root";
+        String password = "root";
+        try {
+            Connection con = DriverManager.getConnection(url, username, password);
+            Statement statement = con.createStatement();
+            ResultSet rs = statement
+                    .executeQuery("SHOW COLUMNS FROM test5 ");
+            rs.next();
+            String enums = rs.getString("Type");
+            System.out.println(enums);
+            System.out.println("int(10)".split("\\(")[1].split("\\)")[0]);
 
         }catch (SQLException e){
             e.printStackTrace();
