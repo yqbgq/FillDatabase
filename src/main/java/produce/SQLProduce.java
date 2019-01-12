@@ -30,9 +30,13 @@ public class SQLProduce implements ISQLProduce{
                     suffixSql = suffixSql + "'" + property.getIntProduce().produce(temp.getLength()) + "'";
                 }
             }else{
-                prefixSql = prefixSql +  temp.getName() ;
-                suffixSql = suffixSql + "'" +  property.getCharProduce().produce(temp.getLength())  + "'";
-
+                if(temp.getType().equals("char")) {
+                    prefixSql = prefixSql + temp.getName();
+                    suffixSql = suffixSql + "'" + property.getCharProduce().produce(temp.getLength()) + "'";
+                }else{
+                    prefixSql = prefixSql + temp.getName();
+                    suffixSql = suffixSql + "'" + property.getFloatProduce().produce(temp.getLength()) + "'";
+                }
             }
             if(task.getCol().indexOf(temp) != task.getCol().size()-1){
                 prefixSql += ",";

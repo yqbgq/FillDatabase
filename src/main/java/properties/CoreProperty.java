@@ -30,6 +30,9 @@ public class CoreProperty {
     /**默认的字符串生成器**/
     private IProduce charProduce = new CharProduce();
 
+    /**默认的浮点生成器**/
+    private IProduce floatProduce = new FloatProduce();
+
     /**默认的SQL生成器**/
     private ISQLProduce sqlProduce = new SQLProduce();
 
@@ -93,5 +96,14 @@ public class CoreProperty {
     public void setSqlProduce(ISQLProduce sqlProduce) {
         this.sqlProduce = sqlProduce;
     }
+
+    public IProduce getFloatProduce() {
+        return floatProduce;
+    }
+
+    public void setFloatProduce(IProduce floatProduce) {
+        this.floatProduce = floatProduce;
+    }
+
     //------------------Setter and Getter ----------------------------------------
 }
