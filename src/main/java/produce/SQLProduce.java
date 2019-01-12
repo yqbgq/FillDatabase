@@ -21,36 +21,38 @@ public class SQLProduce implements ISQLProduce{
     public  String getSQL(Task task, CoreProperty property){
         String database = task.getDatabase();
         String table = task.getTable();
-        String prefixSql = "insert into " + database + "." + table + "(";
-        String suffixSql = "values(";
+        //String prefixSql = "insert into " + database + "." + table + "(";
+        StringBuilder prefixSql = new StringBuilder("insert into " + database + "." + table + "(");
+        //String suffixSql = "values(";
+        StringBuilder suffixSql = new StringBuilder("values(");
         for(Type temp : task.getCol()){
             if(temp.getType().equals("int")){
                 if(!((Int)temp).isAutoIncrease()){
-                    prefixSql = prefixSql +  temp.getName() ;
-                    suffixSql = suffixSql + "'" + property.getIntProduce().produce(temp.getLength()) + "'";
+                    prefixSql.append(  temp.getName() );
+                    suffixSql.append( "'").append(  property.getIntProduce().produce(temp.getLength()) ).append("'");
                 }
             }else{
                 if(temp.getType().equals("char")) {
-                    prefixSql = prefixSql + temp.getName();
-                    suffixSql = suffixSql + "'" + property.getCharProduce().produce(temp.getLength()) + "'";
+                    prefixSql.append(temp.getName());
+                    suffixSql.append( "'").append(  property.getCharProduce().produce(temp.getLength()) ).append("'");
                 }else{
                     if(temp.getType().equals("float")) {
-                        prefixSql = prefixSql + temp.getName();
-                        suffixSql = suffixSql + "'" + property.getFloatProduce().produce(temp.getLength()) + "'";
+                        prefixSql.append(temp.getName());
+                        suffixSql.append( "'").append(  property.getFloatProduce().produce(temp.getLength()) ).append("'");
                     }else{
-                        prefixSql = prefixSql + temp.getName();
-                        suffixSql = suffixSql + "'" + property.getDateProduce().produce(temp.getLength()) + "'";
+                        prefixSql.append(temp.getName());
+                        suffixSql.append( "'").append(  property.getDateProduce().produce(temp.getLength()) ).append("'");
                     }
                 }
             }
             if(task.getCol().indexOf(temp) != task.getCol().size()-1){
-                prefixSql += ",";
-                suffixSql += ",";
+                prefixSql.append(",");
+                suffixSql.append( ",");
             }
         }
-        prefixSql += ")";
-        suffixSql += ")";
+        prefixSql.append(")");
+        suffixSql.append( ")");
 
-        return prefixSql + " " + suffixSql;
+        return prefixSql.append(" ").append(suffixSql).toString();
     }
 }

@@ -13,7 +13,7 @@ public class CharProduce implements IProduce{
     /**
      * 返回生成的字符串
      * @param maxLength 约束条件，最大长度
-     * @return
+     * @return 构造完成的字符串
      */
     @Override
     public String produce(int maxLength){
