@@ -1,6 +1,5 @@
 package thread;
 
-import org.junit.Test;
 import process.TaskAnalyze;
 import properties.CoreProperty;
 import task.Task;

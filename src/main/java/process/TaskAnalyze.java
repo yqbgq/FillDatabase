@@ -78,7 +78,7 @@ public class TaskAnalyze {
         ArrayList<Task> result = new ArrayList<>();
         try {
             DatabaseMetaData metaData = con.getMetaData();
-            ResultSet rs = metaData.getTables("java", null, null, new String[]{"TABLE"});
+            ResultSet rs = metaData.getTables(task.getDatabase(), null, null, new String[]{"TABLE"});
             ArrayList<String> tables = new ArrayList<>();
             while (rs.next()) {
                 tables.add(rs.getString(3));
