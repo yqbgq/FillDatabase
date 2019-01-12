@@ -6,7 +6,6 @@ import thread.FillThread;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.ArrayList;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -29,6 +28,7 @@ public class TaskClient extends AbstractClient implements Process{
                     taskList.addAll(x);
                 }
             }
+            tempTaskList.clear();
         }catch (Exception e){
             e.printStackTrace();
         }

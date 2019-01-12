@@ -4,6 +4,12 @@ import produce.*;
 
 /**
  * 核心配置类，持有和程序行为相关的一些配置信息
+ * 相关的属性有：
+ * 1. 数据库的用户名、密码
+ * 2. 数据库连接的前缀和后缀
+ * 3. 最大的线程数
+ * 4. 各种类型字段默认的生成器
+ * 5. 默认的SQL生成器
  *
  * @author 黄伟
  *
@@ -43,77 +49,58 @@ public class CoreProperty {
     public  String getUsername() {
         return this.username;
     }
-
     public  void setUsername(String username) {
         this.username = username;
     }
-
     public  String getPassword() {
         return password;
     }
-
     public  void setPassword(String password) {
         this.password = password;
     }
-
     public  String getUrlPrefix() {
         return this.urlPrefix;
     }
-
     public  void setUrlPrefix(String urlPrefix) {
         this.urlPrefix = urlPrefix;
     }
-
     public  String getUrlSuffix() {
         return this.urlSuffix;
     }
-
     public  void setUrlSuffix(String urlSuffix) {
         this.urlSuffix = urlSuffix;
     }
-
     public int getNumOfThreads() { return numOfThreads; }
-
     public void setNumOfThreads(int numOfThreads) { this.numOfThreads = numOfThreads; }
-
     public IProduce getIntProduce() {
         return intProduce;
     }
-
     public void setIntProduce(IProduce intProduce) {
         this.intProduce = intProduce;
     }
-
     public IProduce getCharProduce() {
         return charProduce;
     }
-
     public void setCharProduce(IProduce charProduce) {
         this.charProduce = charProduce;
     }
-
     public ISQLProduce getSqlProduce() {
         return sqlProduce;
     }
-
     public void setSqlProduce(ISQLProduce sqlProduce) {
         this.sqlProduce = sqlProduce;
     }
-
     public IProduce getFloatProduce() {
         return floatProduce;
     }
-
     public void setFloatProduce(IProduce floatProduce) {
         this.floatProduce = floatProduce;
     }
-
     public IProduce getDateProduce() {
         return DateProduce;
     }
-
     public void setDateProduce(IProduce dateProduce) {
         DateProduce = dateProduce;
     }
-//------------------Setter and Getter ----------------------------------------
+    //------------------Setter and Getter ----------------------------------------
 }
