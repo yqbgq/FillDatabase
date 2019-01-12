@@ -50,5 +50,10 @@ public class TaskClient extends AbstractClient implements Process{
         for(Thread t : threads){
             exe.execute(t);
         }
+        exe.shutdown();
+        while(exe.isTerminated()){
+            System.out.println("all is over");
+            System.exit(0);
+        }
     }
 }

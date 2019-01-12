@@ -19,6 +19,7 @@ public class FillThread extends AThread {
 
     @Override
     public void run() {
+        System.out.println("开始任务"+task.getDatabase()+"."+task.getTable());
         while(task.reduce() >= 0) {
             String sql = this.property.getSqlProduce().getSQL(this.task, this.property);
             try {
@@ -33,5 +34,6 @@ public class FillThread extends AThread {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        System.out.println("结束任务"+task);
     }
 }
