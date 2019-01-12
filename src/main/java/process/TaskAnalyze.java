@@ -42,7 +42,7 @@ public class TaskAnalyze {
                 Int type= new Int(columnName,size, nullable == 1,autoincrement);
                 task.addField(type);
             }else{
-                if(columnType.toLowerCase().contains("char")){
+                if(columnType.toLowerCase().contains("char") || columnType.toLowerCase().contains("text")){
                     Char type = new Char(columnName,size, nullable == 1);
                     task.addField(type);
                 }else{
