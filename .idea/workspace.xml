@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b95fc52e-d768-423c-b605-a784b786e3fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/produce/EnumProduce.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/types/Enum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/process/TaskAnalyze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/process/TaskAnalyze.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/produce/SQLProduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/produce/SQLProduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/properties/CoreProperty.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/properties/CoreProperty.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/thread/FillThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/thread/FillThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/Process/TestDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/Process/TestDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/database/MetaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/database/MetaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/produce/TestSQLProduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/produce/TestSQLProduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/process/TaskAnalyze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/process/TaskAnalyze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/produce/SQLProduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/produce/SQLProduce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/properties/CoreProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/CoreProperty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thread/FillThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/thread/FillThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Process/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Process/TestDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/database/MetaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/database/MetaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/produce/TestSQLProduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/produce/TestSQLProduce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/process/AbstractClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/process/AbstractClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/process/TaskClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/process/TaskClient.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -126,7 +111,7 @@
         <counts>
           <entry key="class" value="1" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="298" />
+          <entry key="java" value="303" />
           <entry key="md" value="1" />
           <entry key="sql" value="1" />
         </counts>
@@ -135,7 +120,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="298" />
+          <entry key="JAVA" value="303" />
           <entry key="Markdown" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -144,14 +129,14 @@
         <counts>
           <entry key="dummy" value="9" />
           <entry key="gradle" value="2" />
-          <entry key="java" value="15166" />
+          <entry key="java" value="15337" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="2" />
-          <entry key="JAVA" value="15166" />
+          <entry key="JAVA" value="15337" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
@@ -160,10 +145,45 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/produce/EnumProduce.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/process/TaskClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="504">
+              <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2069#2070#0" expanded="true" />
+                <element signature="e#2116#2117#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/process/AbstractClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/builder/ConcreteBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="65" column="38" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="65" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/builder/Builder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="54" column="65" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -595,8 +615,6 @@
         <option value="$PROJECT_DIR$/src/main/java/thread/AThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/builder/Builder.java" />
         <option value="$PROJECT_DIR$/src/main/java/builder/ConcreteBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/process/AbstractClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/process/TaskClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/produce/CharProduce.java" />
         <option value="$PROJECT_DIR$/src/test/java/thread/testAddThread.java" />
         <option value="$PROJECT_DIR$/src/test/java/Process/TestBuildTask.java" />
@@ -609,6 +627,8 @@
         <option value="$PROJECT_DIR$/src/test/java/Process/TestDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/produce/EnumProduce.java" />
         <option value="$PROJECT_DIR$/src/main/java/types/Enum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/process/AbstractClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/process/TaskClient.java" />
       </list>
     </option>
   </component>
@@ -770,7 +790,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547386281866" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547386474549" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -907,7 +927,7 @@
       <workItem from="1547258200371" duration="7355000" />
       <workItem from="1547281476820" duration="1717000" />
       <workItem from="1547294445527" duration="4020000" />
-      <workItem from="1547382089796" duration="4184000" />
+      <workItem from="1547382089796" duration="4717000" />
     </task>
     <servers />
   </component>
@@ -944,7 +964,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52603000" />
+    <option name="totallyTimeSpent" value="53136000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -956,7 +976,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29613733" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1092,13 +1113,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/builder/Builder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/database/ConnectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -1199,13 +1213,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/builder/ConcreteBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_171/src.zip!/java/lang/ClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -1220,27 +1227,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/process/AbstractClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/thread/AThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/process/TaskClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1377,16 +1367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Process/TestDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/types/Enum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -1401,6 +1381,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/builder/Builder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="54" column="65" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/builder/ConcreteBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="65" column="38" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="65" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/process/AbstractClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Process/TestDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/process/TaskClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2069#2070#0" expanded="true" />
+            <element signature="e#2116#2117#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

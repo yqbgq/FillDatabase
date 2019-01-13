@@ -51,6 +51,24 @@ public class TaskClient extends AbstractClient implements Process{
             exe.execute(t);
         }
         exe.shutdown();
+    }
 
+    /**
+     * 允许后续添加任务
+     * @param database 数据库名
+     * @param table 数据表名
+     * @param numOfRows 需要写入的记录行数
+     */
+    public void addTask(String database , String table, int numOfRows){
+        Task task = new Task(database,table,numOfRows);
+        this.tempTaskList.add(task);
+    }
+
+    /**
+     * 允许在加入任务之后删除任务
+     * @param index 需要删除的任务的编号
+     */
+    public void removeTask(int index){
+        this.tempTaskList.remove(index);
     }
 }

@@ -1,6 +1,7 @@
 package process;
 
 import properties.CoreProperty;
+import task.Task;
 
 /**
  * 该抽象类持有了核心配置类，并且增加了Getter以及Setter方法
