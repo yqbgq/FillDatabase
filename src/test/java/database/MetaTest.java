@@ -84,11 +84,11 @@ public class MetaTest {
             Connection con = DriverManager.getConnection(url, username, password);
             Statement statement = con.createStatement();
             ResultSet rs = statement
-                    .executeQuery("SHOW COLUMNS FROM test5 ");
+                    .executeQuery("SHOW COLUMNS FROM test8 ");
             rs.next();
             String enums = rs.getString("Type");
             System.out.println(enums);
-            System.out.println("int(10)".split("\\(")[1].split("\\)")[0]);
+            System.out.println(enums.split("',").length);
 
         }catch (SQLException e){
             e.printStackTrace();

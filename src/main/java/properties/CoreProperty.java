@@ -42,69 +42,38 @@ public class CoreProperty {
     /**默认的日期生成器**/
     private IProduce DateProduce = new DateProduce();
 
+    /**默认的枚举生成器**/
+    private IProduce enumProduce = new EnumProduce();
+
     /**默认的SQL生成器**/
     private ISQLProduce sqlProduce = new SQLProduce();
 
     /** 插入线程执行时，每个PreparedStatement携带的SQL语句数量**/
     private int numOfSQL = 40;
     //------------------Setter and Getter ----------------------------------------
-    public  String getUsername() {
-        return this.username;
-    }
-    public  void setUsername(String username) {
-        this.username = username;
-    }
-    public  String getPassword() {
-        return password;
-    }
-    public  void setPassword(String password) {
-        this.password = password;
-    }
-    public  String getUrlPrefix() {
-        return this.urlPrefix;
-    }
-    public  void setUrlPrefix(String urlPrefix) {
-        this.urlPrefix = urlPrefix;
-    }
-    public  String getUrlSuffix() {
-        return this.urlSuffix;
-    }
-    public  void setUrlSuffix(String urlSuffix) {
-        this.urlSuffix = urlSuffix;
-    }
+    public  String getUsername() { return this.username; }
+    public  void setUsername(String username) { this.username = username; }
+    public  String getPassword() { return password; }
+    public  void setPassword(String password) { this.password = password; }
+    public  String getUrlPrefix() { return this.urlPrefix; }
+    public  void setUrlPrefix(String urlPrefix) { this.urlPrefix = urlPrefix; }
+    public  String getUrlSuffix() { return this.urlSuffix; }
+    public  void setUrlSuffix(String urlSuffix) { this.urlSuffix = urlSuffix; }
     public int getNumOfThreads() { return numOfThreads; }
     public void setNumOfThreads(int numOfThreads) { this.numOfThreads = numOfThreads; }
-    public IProduce getIntProduce() {
-        return intProduce;
-    }
-    public void setIntProduce(IProduce intProduce) {
-        this.intProduce = intProduce;
-    }
-    public IProduce getCharProduce() {
-        return charProduce;
-    }
-    public void setCharProduce(IProduce charProduce) {
-        this.charProduce = charProduce;
-    }
-    public ISQLProduce getSqlProduce() {
-        return sqlProduce;
-    }
-    public void setSqlProduce(ISQLProduce sqlProduce) {
-        this.sqlProduce = sqlProduce;
-    }
-    public IProduce getFloatProduce() {
-        return floatProduce;
-    }
-    public void setFloatProduce(IProduce floatProduce) {
-        this.floatProduce = floatProduce;
-    }
-    public IProduce getDateProduce() {
-        return DateProduce;
-    }
-    public void setDateProduce(IProduce dateProduce) {
-        DateProduce = dateProduce;
-    }
+    public IProduce getIntProduce() { return intProduce; }
+    public void setIntProduce(IProduce intProduce) { this.intProduce = intProduce; }
+    public IProduce getCharProduce() { return charProduce; }
+    public void setCharProduce(IProduce charProduce) { this.charProduce = charProduce; }
+    public ISQLProduce getSqlProduce() { return sqlProduce; }
+    public void setSqlProduce(ISQLProduce sqlProduce) { this.sqlProduce = sqlProduce; }
+    public IProduce getFloatProduce() { return floatProduce; }
+    public void setFloatProduce(IProduce floatProduce) { this.floatProduce = floatProduce; }
+    public IProduce getDateProduce() { return DateProduce; }
+    public void setDateProduce(IProduce dateProduce) { DateProduce = dateProduce; }
     public int getNumOfSQL() {return numOfSQL; }
     public void setNumOfSQL(int numOfSQL) { this.numOfSQL = numOfSQL; }
+    public IProduce getEnumProduce() { return enumProduce; }
+    public void setEnumProduce(IProduce enumProduce) { this.enumProduce = enumProduce; }
     //------------------Setter and Getter ----------------------------------------
 }

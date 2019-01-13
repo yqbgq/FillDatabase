@@ -4,6 +4,7 @@ import exception.MissTableException;
 import task.Task;
 import types.Char;
 import types.Date;
+import types.Enum;
 import types.FloatType;
 import types.Int;
 import java.sql.Connection;
@@ -54,6 +55,11 @@ public class TaskAnalyze {
                         if(columnType.toLowerCase().contains("date")){
                             Date type = new Date(columnName,size, nullable == 1);
                             task.addField(type);
+                        }else{
+                            if(columnType.toLowerCase().contains("enum")){
+                                Enum type = new Enum(columnName,nullable == 1,conn,task.getDatabase(),task.getTable());
+                                task.addField(type);
+                            }
                         }
                     }
                 }

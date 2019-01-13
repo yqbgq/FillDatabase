@@ -15,7 +15,7 @@ public class TestDemo {
         TaskClient client = builder
                 .setUsername("root")
                 .setPassword("root")
-                .addTask("fill",null,211)
+                .addTask("fill",null,150)
                 .build();
         client.start();
     }

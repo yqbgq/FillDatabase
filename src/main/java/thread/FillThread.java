@@ -17,7 +17,7 @@ public class FillThread extends AThread {
         System.out.println("开始任务"+task.getDatabase()+"."+task.getTable());
         int numOfSQL = property.getNumOfSQL();
         try(Connection conn = DriverManager.getConnection(property.getUrlPrefix()
-                + "fill" + property.getUrlSuffix(),
+                + task.getDatabase() + property.getUrlSuffix(),
                 property.getUsername(), property.getPassword());
             PreparedStatement ps = conn.prepareStatement(this.property.getSqlProduce().getSQL(this.task, this.property))){
             conn.setAutoCommit(false);
