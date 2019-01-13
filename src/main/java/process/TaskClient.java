@@ -46,6 +46,7 @@ public class TaskClient extends AbstractClient implements Process{
         for(Task task : taskList){
             threads.add(new FillThread(task,property));
         }
+        taskList.clear();
         for(Thread t : threads){
             exe.execute(t);
         }
