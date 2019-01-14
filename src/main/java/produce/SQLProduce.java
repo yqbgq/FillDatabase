@@ -23,8 +23,10 @@ public class SQLProduce implements ISQLProduce{
         String table = task.getTable();
         StringBuilder prefixSql = new StringBuilder("insert into " + database + "." + table + "(");
         StringBuilder suffixSql = new StringBuilder("values(");
+        //构造SQL语句，判断当前列的类型，并交由对应的生成器生成字符串
         for(Type temp : task.getCol()){
             if(temp.getType().equals("int")){
+                //如果是自增的，则不进行处理
                 if(!((Int)temp).isAutoIncrease()){
                     prefixSql.append(  temp.getName() );
                     suffixSql.append(  property.getIntProduce().produce(temp) );
@@ -48,18 +50,13 @@ public class SQLProduce implements ISQLProduce{
                     }
                 }
             }
-
             if(task.getCol().indexOf(temp) != task.getCol().size()-1){
                 prefixSql.append(",");
                 suffixSql.append( ",");
             }
         }
-
         prefixSql.append(")");
         suffixSql.append( ")");
-
-        String result = prefixSql.append(" ").append(suffixSql).toString();
-        //System.out.println(result);
-        return result;
+        return prefixSql.append(" ").append(suffixSql).toString();
     }
 }

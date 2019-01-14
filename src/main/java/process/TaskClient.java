@@ -7,7 +7,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -82,14 +81,19 @@ public class TaskClient extends AbstractClient implements Process{
         taskList.clear();
     }
 
-    public void foreignAnalyze() throws Exception {
+    @Override
+    public void foreignAnalyze() throws UnMatchedRefTableException {
         int count = this.taskList.size();
-        Connection conn = DriverManager.getConnection(property.getUrlPrefix()
-                        + "mysql" + property.getUrlSuffix(),
-                property.getUsername(), property.getPassword());
-        taskList = ForeignAnalyze.analyze(taskList,conn);
-        if(taskList.size() != count){
-            throw new UnMatchedRefTableException("匹配外键信息时出错，请检查任务是否满足外键限制！");
+        try {
+            Connection conn = DriverManager.getConnection(property.getUrlPrefix()
+                            + "mysql" + property.getUrlSuffix(),
+                    property.getUsername(), property.getPassword());
+            taskList = ForeignAnalyze.analyze(taskList, conn);
+            if (taskList.size() != count) {
+                throw new UnMatchedRefTableException("匹配外键信息时出错，请检查任务是否满足外键限制！");
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
         }
     }
 
@@ -108,6 +112,7 @@ public class TaskClient extends AbstractClient implements Process{
      * 允许在加入任务之后删除任务
      * @param index 需要删除的任务的编号
      */
+
     public void removeTask(int index){
         this.tempTaskList.remove(index);
     }

@@ -33,7 +33,8 @@ public class TaskAnalyze {
     public static Task analyze(Task task, Connection conn) throws Exception {
         DatabaseMetaData metaData = conn.getMetaData();//获取数据库的元数据
         //获取指定数据表的元数据
-        ResultSet colRet = metaData.getColumns(task.getDatabase(), "%", task.getTable(),"%");
+        ResultSet colRet = metaData.getColumns(task.getDatabase(),
+                "%", task.getTable(),"%");
         while(colRet.next()) {
             String columnName = colRet.getString("COLUMN_NAME");
             String columnType = colRet.getString("TYPE_NAME");
@@ -57,7 +58,8 @@ public class TaskAnalyze {
                             task.addField(type);
                         }else{
                             if(columnType.toLowerCase().contains("enum")){
-                                Enum type = new Enum(columnName,nullable == 1,conn,task.getDatabase(),task.getTable());
+                                Enum type = new Enum(columnName,nullable == 1,
+                                        conn,task.getDatabase(),task.getTable());
                                 task.addField(type);
                             }
                         }
@@ -80,11 +82,12 @@ public class TaskAnalyze {
      * @param con 数据库连接
      * @return 返回一个任务的集合
      */
-    public static ArrayList<Task> analyzeDatabase(Task task, Connection con){
+    static ArrayList<Task> analyzeDatabase(Task task, Connection con){
         ArrayList<Task> result = new ArrayList<>();
         try {
             DatabaseMetaData metaData = con.getMetaData();
-            ResultSet rs = metaData.getTables(task.getDatabase(), null, null, new String[]{"TABLE"});
+            ResultSet rs = metaData.getTables(task.getDatabase(), null,
+                    null, new String[]{"TABLE"});
             ArrayList<String> tables = new ArrayList<>();
             while (rs.next()) {
                 tables.add(rs.getString(3));

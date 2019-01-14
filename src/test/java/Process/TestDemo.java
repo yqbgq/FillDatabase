@@ -9,13 +9,12 @@ public class TestDemo {
         t.testBuildTask();
     }
 
-
     private void testBuildTask() throws Exception{
         ConcreteBuilder builder = new ConcreteBuilder();
         TaskClient client = builder
                 .setUsername("root")
                 .setPassword("root")
-                .addTask("foreign",null,100)
+                .addTask("foreign","test1",10000)
                 .build();
         client.start();
     }

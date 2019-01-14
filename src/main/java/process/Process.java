@@ -1,5 +1,7 @@
 package process;
 
+import exception.UnMatchedRefTableException;
+
 /**
  * 该接口规定了Client 运行的相关方法
  *
@@ -23,4 +25,9 @@ public interface Process {
      * 遍历每一个任务，将任务交给特殊的线程类，并放入线程池中进行运行
      */
     void insert();
+
+    /**
+     * 对外键的相关信息进行检查
+     */
+    void foreignAnalyze() throws UnMatchedRefTableException;
 }
