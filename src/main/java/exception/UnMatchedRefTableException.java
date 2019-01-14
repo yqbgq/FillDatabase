@@ -1,7 +1,7 @@
 package exception;
 
 /**
- * 当匹配外链指向表出错时抛出该错误
+ * 当匹配外键指向表出错时抛出该错误
  */
 public class UnMatchedRefTableException extends Exception {
     /**
