@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b95fc52e-d768-423c-b605-a784b786e3fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/process/ForeignAnalyze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/process/ForeignAnalyze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/process/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/process/Process.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/process/TaskAnalyze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/process/TaskAnalyze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/process/TaskClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/process/TaskClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/produce/SQLProduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/produce/SQLProduce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/properties/CoreProperty.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/properties/CoreProperty.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/Process/TestDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/Process/TestDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/properties/CoreProperty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/CoreProperty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Process/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Process/TestDemo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -95,7 +94,7 @@
     <session id="-198485004">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -116,7 +115,7 @@
         <counts>
           <entry key="class" value="1" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="375" />
+          <entry key="java" value="377" />
           <entry key="md" value="1" />
           <entry key="sql" value="1" />
         </counts>
@@ -125,7 +124,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="375" />
+          <entry key="JAVA" value="377" />
           <entry key="Markdown" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -134,14 +133,14 @@
         <counts>
           <entry key="dummy" value="9" />
           <entry key="gradle" value="2" />
-          <entry key="java" value="19263" />
+          <entry key="java" value="19271" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="2" />
-          <entry key="JAVA" value="19263" />
+          <entry key="JAVA" value="19271" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
@@ -219,11 +218,34 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Process/TestDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="270">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/thread/FillThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#188#189#0" expanded="true" />
+                <element signature="e#225#226#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/properties/CoreProperty.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -647,7 +669,6 @@
         <option value="$PROJECT_DIR$/src/main/java/builder/ConcreteBuilder.java" />
         <option value="$PROJECT_DIR$/src/test/java/thread/testAddThread.java" />
         <option value="$PROJECT_DIR$/src/test/java/Process/TestBuildTask.java" />
-        <option value="$PROJECT_DIR$/src/main/java/properties/CoreProperty.java" />
         <option value="$PROJECT_DIR$/src/test/java/produce/TestSQLProduce.java" />
         <option value="$PROJECT_DIR$/src/main/java/thread/FillThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/types/Enum.java" />
@@ -673,6 +694,7 @@
         <option value="$PROJECT_DIR$/src/main/java/process/Process.java" />
         <option value="$PROJECT_DIR$/src/main/java/process/TaskClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/process/TaskAnalyze.java" />
+        <option value="$PROJECT_DIR$/src/main/java/properties/CoreProperty.java" />
         <option value="$PROJECT_DIR$/src/test/java/Process/TestDemo.java" />
       </list>
     </option>
@@ -844,7 +866,7 @@
     <property name="SearchEverywhereHistoryKey" value="ishas&#9;PSI&#9;JAVA://types.Type#isHasForeignKey" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547467668476" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547467874390" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -1019,7 +1041,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71327000" />
+    <option name="totallyTimeSpent" value="71697000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1032,7 +1054,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30472103" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1269,13 +1290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/properties/CoreProperty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/builder/ConcreteBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1476">
@@ -1332,18 +1346,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/thread/FillThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#188#189#0" expanded="true" />
-            <element signature="e#225#226#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1508,10 +1510,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/thread/FillThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/properties/CoreProperty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Process/TestDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="270">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

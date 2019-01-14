@@ -49,7 +49,7 @@ public class CoreProperty {
     private ISQLProduce sqlProduce = new SQLProduce();
 
     /** 插入线程执行时，每个PreparedStatement携带的SQL语句数量**/
-    private int numOfSQL = 1000;
+    private int numOfSQL = 10000;
     //------------------Setter and Getter ----------------------------------------
     public  String getUsername() { return this.username; }
     public  void setUsername(String username) { this.username = username; }
