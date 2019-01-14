@@ -5,7 +5,10 @@ public abstract class Type {
     private int length;
     private boolean allowEmpty;
     private String type;
-
+    private boolean hasForeignKey;
+    private String foreignKeyDatabase;
+    private String foreignKeyTable;
+    private String foreignKeyColumn;
     public String getName() {
         return name;
     }
@@ -36,5 +39,37 @@ public abstract class Type {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public boolean isHasForeignKey() {
+        return hasForeignKey;
+    }
+
+    public void setHasForeignKey(boolean hasForeignKey) {
+        this.hasForeignKey = hasForeignKey;
+    }
+
+    public String getForeignKeyDatabase() {
+        return foreignKeyDatabase;
+    }
+
+    public void setForeignKeyDatabase(String foreignKeyDatabase) {
+        this.foreignKeyDatabase = foreignKeyDatabase;
+    }
+
+    public String getForeignKeyTable() {
+        return foreignKeyTable;
+    }
+
+    public void setForeignKeyTable(String foreignKeyTable) {
+        this.foreignKeyTable = foreignKeyTable;
+    }
+
+    public String getForeignKeyColumn() {
+        return foreignKeyColumn;
+    }
+
+    public void setForeignKeyColumn(String foreignKeyColumn) {
+        this.foreignKeyColumn = foreignKeyColumn;
     }
 }

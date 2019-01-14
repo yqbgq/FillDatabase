@@ -105,7 +105,12 @@ public class MetaTest {
             Connection con = DriverManager.getConnection(url, username, password);
             DatabaseMetaData m_DBMetaData = con.getMetaData();
             ResultSet colRet = m_DBMetaData.getImportedKeys("fill",null,"test10");
+            colRet.last();
+            System.out.println(colRet.getRow());
+            colRet = m_DBMetaData.getImportedKeys("fill",null,"test10");
             while(colRet.next()) {
+
+
                 System.out.println("====================");
                 for(int i=1;i<14;i++){
 

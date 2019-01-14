@@ -19,7 +19,8 @@ public abstract class ATask {
     private AtomicInteger numOfRows;
     /**任务指向的表每一列的属性**/
     private ArrayList<Type> col = new ArrayList<>();
-
+    /**任务指向的表外键约束指向的表**/
+    private ArrayList<String[]> refTables;
     //----------Getter and Setter----------------
     public String getDatabase() { return database; }
     public void setDatabase(String database) { this.database = database; }
@@ -29,6 +30,14 @@ public abstract class ATask {
     public void setNumOfRows(AtomicInteger numOfRows) { this.numOfRows = numOfRows; }
     public ArrayList<Type> getCol() { return col; }
     public void setCol(ArrayList<Type> col) { this.col = col; }
+
+    public ArrayList<String[]> getRefTables() {
+        return refTables;
+    }
+
+    public void setRefTables(ArrayList<String[]> refTables) {
+        this.refTables = refTables;
+    }
     //----------Getter and Setter----------------
 
     public void addField(Type type){this.col.add(type);}
