@@ -34,15 +34,16 @@ public class MetaTest {
         try {
             Connection con = DriverManager.getConnection(url, username, password);
             DatabaseMetaData m_DBMetaData = con.getMetaData();
-            ResultSet colRet = m_DBMetaData.getColumns(null,"%", "test1","%");
+            ResultSet colRet = m_DBMetaData.getColumns(null,"%", "test10","%");
             while(colRet.next()) {
                 String columnName = colRet.getString("COLUMN_NAME");
                 String columnType = colRet.getString("TYPE_NAME");
                 int datasize = colRet.getInt("COLUMN_SIZE");
                 int digits = colRet.getInt("DECIMAL_DIGITS");
                 int nullable = colRet.getInt("NULLABLE");
+                String ref = colRet.getString("REFERENCED_TABLE_NAME");
                 System.out.println(columnName+" "+columnType+" "+datasize+" "+digits+" "+
-                        nullable + colRet.getString("IS_AUTOINCREMENT"));
+                        nullable + " " + colRet.getString("IS_AUTOINCREMENT") + " " + ref);
             }
 
         }catch (SQLException e){
@@ -59,10 +60,10 @@ public class MetaTest {
         try {
             Connection con = DriverManager.getConnection(url, username, password);
             DatabaseMetaData m_DBMetaData = con.getMetaData();
-            ResultSet colRet = m_DBMetaData.getColumns(null,"%", "test5","%");
+            ResultSet colRet = m_DBMetaData.getColumns(null,"%", "test10","%");
             while(colRet.next()) {
                 System.out.println("====================");
-                for(int i=1;i<30;i++){
+                for(int i=1;i<25;i++){
 
                     System.out.println(colRet.getString(i));
                 }
@@ -89,6 +90,29 @@ public class MetaTest {
             String enums = rs.getString("Type");
             System.out.println(enums);
             System.out.println(enums.split("',").length);
+
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void foreignKey(){
+        String url = "jdbc:mysql://127.0.0.1:3306/fill?useSSL=true&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8";
+        String username = "root";
+        String password = "root";
+        try {
+            Connection con = DriverManager.getConnection(url, username, password);
+            DatabaseMetaData m_DBMetaData = con.getMetaData();
+            ResultSet colRet = m_DBMetaData.getImportedKeys("fill",null,"test10");
+            while(colRet.next()) {
+                System.out.println("====================");
+                for(int i=1;i<14;i++){
+
+                    System.out.println(colRet.getString(i));
+                }
+                System.out.println("====================");
+            }
 
         }catch (SQLException e){
             e.printStackTrace();
