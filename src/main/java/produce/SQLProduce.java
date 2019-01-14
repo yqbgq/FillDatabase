@@ -21,34 +21,29 @@ public class SQLProduce implements ISQLProduce{
     public  String getSQL(Task task, CoreProperty property){
         String database = task.getDatabase();
         String table = task.getTable();
-        //String prefixSql = "insert into " + database + "." + table + "(";
         StringBuilder prefixSql = new StringBuilder("insert into " + database + "." + table + "(");
-        //String suffixSql = "values(";
         StringBuilder suffixSql = new StringBuilder("values(");
-
         for(Type temp : task.getCol()){
-
             if(temp.getType().equals("int")){
                 if(!((Int)temp).isAutoIncrease()){
                     prefixSql.append(  temp.getName() );
-                    suffixSql.append( "'").append(  property.getIntProduce().produce(temp.getLength()) ).append("'");
+                    suffixSql.append(  property.getIntProduce().produce(temp) );
                 }
             }else{
                 if(temp.getType().equals("char")) {
                     prefixSql.append(temp.getName());
-                    suffixSql.append( "'").append(  property.getCharProduce().produce(temp.getLength()) ).append("'");
+                    suffixSql.append(  property.getCharProduce().produce(temp) );
                 }else{
                     if(temp.getType().equals("float")) {
                         prefixSql.append(temp.getName());
-                        suffixSql.append( "'").append(  property.getFloatProduce().produce(temp.getLength()) ).append("'");
+                        suffixSql.append(  property.getFloatProduce().produce(temp) );
                     }else{
                         if(temp.getType().equals("date")) {
                             prefixSql.append(temp.getName());
-                            suffixSql.append("'").append(property.getDateProduce().produce(temp.getLength())).append("'");
+                            suffixSql.append(property.getDateProduce().produce(temp));
                         }else{
                             prefixSql.append(temp.getName());
-                            suffixSql.append("'").append(property.getEnumProduce().produce(temp.getLength())).append("'");
-
+                            suffixSql.append(property.getEnumProduce().produce(temp));
                         }
                     }
                 }
@@ -63,6 +58,8 @@ public class SQLProduce implements ISQLProduce{
         prefixSql.append(")");
         suffixSql.append( ")");
 
-        return prefixSql.append(" ").append(suffixSql).toString();
+        String result = prefixSql.append(" ").append(suffixSql).toString();
+        System.out.println(result);
+        return result;
     }
 }

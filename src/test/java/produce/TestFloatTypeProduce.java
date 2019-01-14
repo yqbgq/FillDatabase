@@ -6,6 +6,6 @@ public class TestFloatTypeProduce {
     @Test
     public void test(){
         FloatProduce c = new FloatProduce();
-        System.out.println(c.produce(100));
+       // System.out.println(c.produce(100));
     }
 }

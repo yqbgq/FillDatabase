@@ -2,6 +2,7 @@ package process;
 
 import task.Task;
 import util.FindTask;
+import util.FindType;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ public class ForeignAnalyze {
                     continue;
                 }
                 temp.add(task);
+
         }
         return ForeignAnalyze.successfulForeignKey(result,temp,con);
     }
@@ -29,7 +31,14 @@ public class ForeignAnalyze {
         ResultSet rs = meta.getImportedKeys(task.getDatabase(),null,task.getTable());
         while(rs.next()){
             refTables.add(new String[] {rs.getString(1),
-                    rs.getString(3)});
+                    rs.getString(3),rs.getString(4)});
+            task.getCol().get(FindType.find(task.getCol(),rs.getString(4))).setHasForeignKey(true);
+            task.getCol().get(FindType.find(task.getCol(),rs.getString(4)))
+                    .setForeignKeyDatabase(rs.getString(1));
+            task.getCol().get(FindType.find(task.getCol(),rs.getString(4)))
+                    .setForeignKeyTable(rs.getString(3));
+            task.getCol().get(FindType.find(task.getCol(),rs.getString(4)))
+                    .setForeignKeyColumn(rs.getString(4));
         }
         return refTables;
     }

@@ -6,6 +6,6 @@ public class TestDateProduce {
     @Test
     public void test(){
         DateProduce c = new DateProduce();
-        System.out.println(c.produce(100));
+        //System.out.println(c.produce(100));
     }
 }

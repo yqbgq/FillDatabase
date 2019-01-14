@@ -1,15 +1,21 @@
 package produce;
 
+import types.Type;
+
 import java.util.Random;
 
 public class DateProduce implements IProduce {
     /**
      * 返回生成的字符串
-     * @param maxLength 约束条件，最大长度
      * @return 生成的日期字符串
      */
     @Override
-    public String produce(int maxLength){
+    public String produce(Type type){
+        if(type.isHasForeignKey()){
+            return "(select " + type.getForeignKeyColumn() +
+                    " from " + type.getForeignKeyDatabase() + "."+
+                    type.getForeignKeyTable() + " order by rand() limit 1)";
+        }
         StringBuilder sb = new StringBuilder();
         Random random = new Random();
         int year = random.nextInt(9999);
@@ -20,11 +26,13 @@ public class DateProduce implements IProduce {
         }else{
             day = random.nextInt(30);
         }
+        sb.append("'");
         sb.append(year);
         sb.append("-");
         sb.append(month);
         sb.append("-");
         sb.append(day);
+        sb.append("'");
         return sb.toString();
     }
 }

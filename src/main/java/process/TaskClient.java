@@ -1,10 +1,13 @@
 package process;
 
+import exception.UnMatchedRefTableException;
 import task.Task;
 import thread.FillThread;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -36,12 +39,17 @@ public class TaskClient extends AbstractClient implements Process{
     @Override
     public void start() {
         this.analyze();
+        try{
+            this.foreignAnalyze();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         this.insert();
     }
 
     @Override
     public void insert() {
-        ExecutorService exe = Executors.newFixedThreadPool(property.getNumOfThreads());
+        ExecutorService exe = Executors.newFixedThreadPool(1);
         ArrayList<FillThread> threads = new ArrayList<>(taskList.size());
         for(Task task : taskList){
             threads.add(new FillThread(task,property));
@@ -51,6 +59,17 @@ public class TaskClient extends AbstractClient implements Process{
             exe.execute(t);
         }
         exe.shutdown();
+    }
+
+    public void foreignAnalyze() throws Exception {
+        int count = this.taskList.size();
+        Connection conn = DriverManager.getConnection(property.getUrlPrefix()
+                        + "mysql" + property.getUrlSuffix(),
+                property.getUsername(), property.getPassword());
+        taskList = ForeignAnalyze.analyze(taskList,conn);
+        if(taskList.size() != count){
+            throw new UnMatchedRefTableException("匹配外键信息时出错，请检查任务是否满足外键限制！");
+        }
     }
 
     /**
