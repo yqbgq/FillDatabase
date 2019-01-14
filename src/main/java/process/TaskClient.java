@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class TaskClient extends AbstractClient implements Process{
     /**持有的临时任务列表，确保在构建时较快，在start()方法被调用之后转换成Task对象列表**/
@@ -49,16 +50,36 @@ public class TaskClient extends AbstractClient implements Process{
 
     @Override
     public void insert() {
-        ExecutorService exe = Executors.newFixedThreadPool(1);
+        ExecutorService exe = Executors.newFixedThreadPool(property.getNumOfThreads());
         ArrayList<FillThread> threads = new ArrayList<>(taskList.size());
+        ArrayList<Task> foreignTaskList = new ArrayList<>();
         for(Task task : taskList){
-            threads.add(new FillThread(task,property));
+            if(task.getRefTables()==null) {
+                threads.add(new FillThread(task, property));
+            }else{
+                foreignTaskList.add(task);
+            }
         }
         taskList.clear();
         for(Thread t : threads){
             exe.execute(t);
         }
         exe.shutdown();
+        try {
+            exe.awaitTermination(1, TimeUnit.HOURS);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+        for(Task task : foreignTaskList){
+            Thread t = new FillThread(task, property);
+            t.start();
+            try {
+                t.join();
+            }catch (InterruptedException e){
+                e.printStackTrace();
+            }
+        }
+        taskList.clear();
     }
 
     public void foreignAnalyze() throws Exception {

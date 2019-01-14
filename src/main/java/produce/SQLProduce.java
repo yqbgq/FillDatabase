@@ -59,7 +59,7 @@ public class SQLProduce implements ISQLProduce{
         suffixSql.append( ")");
 
         String result = prefixSql.append(" ").append(suffixSql).toString();
-        System.out.println(result);
+        //System.out.println(result);
         return result;
     }
 }

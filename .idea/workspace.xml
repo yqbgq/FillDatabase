@@ -2,34 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b95fc52e-d768-423c-b605-a784b786e3fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/FindType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/process/ForeignAnalyze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/process/ForeignAnalyze.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/process/TaskClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/process/TaskClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/produce/CharProduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/produce/CharProduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/produce/DateProduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/produce/DateProduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/produce/EnumProduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/produce/EnumProduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/produce/FloatProduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/produce/FloatProduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/produce/IProduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/produce/IProduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/produce/IntProduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/produce/IntProduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/produce/SQLProduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/produce/SQLProduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/Process/TestDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/Process/TestDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/produce/TestCharProduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/produce/TestCharProduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/produce/TestDateProduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/produce/TestDateProduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/produce/TestFloatTypeProduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/produce/TestFloatTypeProduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/process/ForeignAnalyze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/process/ForeignAnalyze.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/process/TaskClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/process/TaskClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/produce/CharProduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/produce/CharProduce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/produce/DateProduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/produce/DateProduce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/produce/EnumProduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/produce/EnumProduce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/produce/FloatProduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/produce/FloatProduce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/produce/IProduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/produce/IProduce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/produce/IntProduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/produce/IntProduce.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/produce/SQLProduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/produce/SQLProduce.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Process/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Process/TestDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/produce/TestCharProduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/produce/TestCharProduce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/produce/TestDateProduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/produce/TestDateProduce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/produce/TestFloatTypeProduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/produce/TestFloatTypeProduce.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -138,7 +113,7 @@
         <counts>
           <entry key="class" value="1" />
           <entry key="gradle" value="1" />
-          <entry key="java" value="368" />
+          <entry key="java" value="369" />
           <entry key="md" value="1" />
           <entry key="sql" value="1" />
         </counts>
@@ -147,7 +122,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="368" />
+          <entry key="JAVA" value="369" />
           <entry key="Markdown" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -156,14 +131,14 @@
         <counts>
           <entry key="dummy" value="9" />
           <entry key="gradle" value="2" />
-          <entry key="java" value="18305" />
+          <entry key="java" value="18527" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="2" />
-          <entry key="JAVA" value="18305" />
+          <entry key="JAVA" value="18527" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
@@ -174,22 +149,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/process/TaskClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-522">
-              <caret line="41" column="12" lean-forward="true" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+            <state relative-caret-position="315">
+              <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Process/TestDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3404#3405#0" expanded="true" />
+                <element signature="e#3451#3452#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -198,8 +163,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/process/ForeignAnalyze.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="40" column="55" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
+            <state relative-caret-position="-162">
+              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -210,8 +175,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/produce/SQLProduce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+            <state relative-caret-position="105">
+              <caret line="61" column="10" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -219,59 +184,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/produce/CharProduce.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Process/TestDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/produce/DateProduce.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="747">
-              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/produce/EnumProduce.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/produce/FloatProduce.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/produce/IntProduce.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+            <state relative-caret-position="378">
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -715,16 +632,16 @@
         <option value="$PROJECT_DIR$/src/test/java/produce/TestCharProduce.java" />
         <option value="$PROJECT_DIR$/src/test/java/produce/TestFloatTypeProduce.java" />
         <option value="$PROJECT_DIR$/src/test/java/produce/TestDateProduce.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Process/TestDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/FindType.java" />
         <option value="$PROJECT_DIR$/src/main/java/produce/CharProduce.java" />
         <option value="$PROJECT_DIR$/src/main/java/produce/DateProduce.java" />
         <option value="$PROJECT_DIR$/src/main/java/produce/EnumProduce.java" />
         <option value="$PROJECT_DIR$/src/main/java/produce/FloatProduce.java" />
         <option value="$PROJECT_DIR$/src/main/java/produce/IntProduce.java" />
-        <option value="$PROJECT_DIR$/src/main/java/produce/SQLProduce.java" />
-        <option value="$PROJECT_DIR$/src/main/java/process/TaskClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/process/ForeignAnalyze.java" />
+        <option value="$PROJECT_DIR$/src/main/java/process/TaskClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/produce/SQLProduce.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Process/TestDemo.java" />
       </list>
     </option>
   </component>
@@ -748,7 +665,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -888,6 +804,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -895,7 +812,7 @@
     <property name="SearchEverywhereHistoryKey" value="ishas&#9;PSI&#9;JAVA://types.Type#isHasForeignKey" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547462678108" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547465722278" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -1070,7 +987,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67861000" />
+    <option name="totallyTimeSpent" value="69416000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1085,7 +1002,7 @@
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3004292" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30472103" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1094,7 +1011,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946353" visible="true" weight="0.4321267" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946353" visible="true" weight="0.5124434" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39932126" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1204,10 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="450" selection-start-line="450" selection-end-line="450" />
-          <folding>
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1369#1370#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1534,18 +1447,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/produce/SQLProduce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/process/TaskClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-522">
-          <caret line="41" column="12" lean-forward="true" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        <state relative-caret-position="105">
+          <caret line="61" column="10" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1554,18 +1457,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/process/ForeignAnalyze.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="40" column="55" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
+        <state relative-caret-position="-162">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/process/TaskClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3404#3405#0" expanded="true" />
+            <element signature="e#3451#3452#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Process/TestDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="378">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
