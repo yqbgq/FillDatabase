@@ -1,5 +1,7 @@
 package properties;
 
+import Logger.ILogger;
+import Logger.Logger;
 import produce.*;
 
 /**
@@ -50,6 +52,9 @@ public class CoreProperty {
 
     /** 插入线程执行时，每个PreparedStatement携带的SQL语句数量**/
     private int numOfSQL = 10000;
+
+    /**默认的日志器**/
+    private ILogger logger = new Logger();
     //------------------Setter and Getter ----------------------------------------
     public  String getUsername() { return this.username; }
     public  void setUsername(String username) { this.username = username; }
@@ -75,5 +80,7 @@ public class CoreProperty {
     public void setNumOfSQL(int numOfSQL) { this.numOfSQL = numOfSQL; }
     public IProduce getEnumProduce() { return enumProduce; }
     public void setEnumProduce(IProduce enumProduce) { this.enumProduce = enumProduce; }
+    public ILogger getLogger() { return logger; }
+    public void setLogger(ILogger logger) { this.logger = logger; }
     //------------------Setter and Getter ----------------------------------------
 }
