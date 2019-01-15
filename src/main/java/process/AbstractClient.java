@@ -23,5 +23,6 @@ public abstract class AbstractClient {
     public  String getUrlPrefix(){return this.property.getUrlPrefix();}
     public  String getUrlSuffix(){return this.property.getUrlSuffix();}
     public void setNumOfSql(int num){this.property.setNumOfSQL(num);}
+    public CoreProperty getProperty() { return property; }
     //------------Setter and Getter--------------------------
 }

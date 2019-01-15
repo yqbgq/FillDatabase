@@ -5,7 +5,7 @@ public class Int extends Type{
         this.setName(name);
         this.setLength(length);
         this.setAllowEmpty(allowEmpty);
-        this.setAutoIncrease(allowEmpty);
+        this.setAutoIncrease(autoIncrease);
         this.setType("int");
     }
 

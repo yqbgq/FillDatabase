@@ -2,11 +2,9 @@ package process;
 
 import exception.MissTableException;
 import task.Task;
-import types.Char;
-import types.Date;
+import types.*;
 import types.Enum;
-import types.FloatType;
-import types.Int;
+
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
@@ -40,7 +38,7 @@ public class TaskAnalyze {
             String columnType = colRet.getString("TYPE_NAME");
             int size = colRet.getInt("COLUMN_SIZE");
             int nullable = colRet.getInt("NULLABLE");
-            boolean autoincrement = colRet.getString("IS_AUTOINCREMENT").equalsIgnoreCase("YES");
+            boolean autoincrement = colRet.getString("IS_AUTOINCREMENT").equalsIgnoreCase("yes");
             if(columnType.toLowerCase().contains("int")){
                 Int type= new Int(columnName,size, nullable == 1,autoincrement);
                 task.addField(type);
@@ -93,7 +91,7 @@ public class TaskAnalyze {
                 tables.add(rs.getString(3));
             }
             for(String x : tables){
-                Task temp = new Task(task.getDatabase(),x,task.getNumOfRows().get());
+                Task temp = new Task(task.getDatabase(),x,task.getNumOfRows());
                 try {
                     result.add(analyze(temp, con));
                 }catch (Exception e){

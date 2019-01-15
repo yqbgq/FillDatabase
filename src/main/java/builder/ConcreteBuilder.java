@@ -2,6 +2,7 @@ package builder;
 
 import process.TaskClient;
 import exception.BuildingException;
+import properties.CoreProperty;
 import task.Task;
 
 import java.sql.Connection;
@@ -33,6 +34,7 @@ public class ConcreteBuilder implements Builder {
         }catch (SQLException e){
             throw new BuildingException("在构造时会测试连接MySQL系统的数据库mysql检测用户名和密码，连接失败！");
         }
+        this.client.getProperty().getLogger().log("客户端构造成功");
         return client;
     }
 

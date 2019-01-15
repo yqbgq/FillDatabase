@@ -30,7 +30,7 @@ public class CoreProperty {
     private  String urlSuffix = "?useSSL=true&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8";
 
     /**设定最大可以开的线程数量，据说这样是最好的**/
-    private int numOfThreads = Runtime.getRuntime().availableProcessors() * 2 + 2;
+    private int numOfThreads = Runtime.getRuntime().availableProcessors() * 2 ;
 
     /**默认的整型生成器**/
     private IProduce intProduce = new IntProduce();

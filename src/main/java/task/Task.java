@@ -13,7 +13,7 @@ public class Task extends ATask implements Cloneable{
     public Task(String database, String table ,int numOfRows){
         this.setDatabase(database);
         this.setTable(table);
-        this.setNumOfRows(new AtomicInteger(numOfRows));
+        this.setNumOfRows(numOfRows);
     }
 
     public Object clone(){

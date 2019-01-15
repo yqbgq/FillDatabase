@@ -38,12 +38,15 @@ public class TaskClient extends AbstractClient implements Process{
 
     @Override
     public void start() {
+        this.getProperty().getLogger().log("开始对任务列表进行分析");
         this.analyze();
+        this.getProperty().getLogger().log("任务分析完成，检查任务表上是否存在外键");
         try{
             this.foreignAnalyze();
         }catch (Exception e){
             e.printStackTrace();
         }
+        this.getProperty().getLogger().log("外键检查完成，即将开始执行任务");
         this.insert();
     }
 

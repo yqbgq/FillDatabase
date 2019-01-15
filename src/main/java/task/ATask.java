@@ -16,7 +16,7 @@ public abstract class ATask {
     /**任务指向的表名**/
     private String table;
     /**任务需要写入的行数**/
-    private AtomicInteger numOfRows;
+    private int numOfRows;
     /**任务指向的表每一列的属性**/
     private ArrayList<Type> col = new ArrayList<>();
     /**任务指向的表外键约束指向的表**/
@@ -26,15 +26,13 @@ public abstract class ATask {
     public void setDatabase(String database) { this.database = database; }
     public String getTable() { return table; }
     public void setTable(String table) { this.table = table; }
-    public AtomicInteger getNumOfRows() { return numOfRows; }
-    public void setNumOfRows(AtomicInteger numOfRows) { this.numOfRows = numOfRows; }
+    public int getNumOfRows() { return numOfRows; }
+    public void setNumOfRows(int numOfRows) { this.numOfRows = numOfRows; }
     public ArrayList<Type> getCol() { return col; }
     public void setCol(ArrayList<Type> col) { this.col = col; }
-
     public ArrayList<String[]> getRefTables() {
         return refTables;
     }
-
     public void setRefTables(ArrayList<String[]> refTables) {
         this.refTables = refTables;
     }
@@ -43,5 +41,5 @@ public abstract class ATask {
     public void addField(Type type){this.col.add(type);}
     public int getSize(){return this.col.size();}
     public Type getType(int index){return this.col.get(index);}
-    public int reduce(){return this.numOfRows.addAndGet(-1);}
+    public String getName(){return this.database + "." + this.table;}
 }

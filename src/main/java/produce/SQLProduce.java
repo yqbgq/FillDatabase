@@ -25,22 +25,22 @@ public class SQLProduce implements ISQLProduce{
         StringBuilder suffixSql = new StringBuilder("values(");
         //构造SQL语句，判断当前列的类型，并交由对应的生成器生成字符串
         for(Type temp : task.getCol()){
-            if(temp.getType().equals("int")){
+            if(temp.getType().contains("int")){
                 //如果是自增的，则不进行处理
                 if(!((Int)temp).isAutoIncrease()){
                     prefixSql.append(  temp.getName() );
                     suffixSql.append(  property.getIntProduce().produce(temp) );
                 }
             }else{
-                if(temp.getType().equals("char")) {
+                if(temp.getType().contains("char")) {
                     prefixSql.append(temp.getName());
                     suffixSql.append(  property.getCharProduce().produce(temp) );
                 }else{
-                    if(temp.getType().equals("float")) {
+                    if(temp.getType().contains("float")) {
                         prefixSql.append(temp.getName());
                         suffixSql.append(  property.getFloatProduce().produce(temp) );
                     }else{
-                        if(temp.getType().equals("date")) {
+                        if(temp.getType().contains("date")) {
                             prefixSql.append(temp.getName());
                             suffixSql.append(property.getDateProduce().produce(temp));
                         }else{
@@ -50,9 +50,13 @@ public class SQLProduce implements ISQLProduce{
                     }
                 }
             }
-            if(task.getCol().indexOf(temp) != task.getCol().size()-1){
-                prefixSql.append(",");
-                suffixSql.append( ",");
+            //当不是最后一列时需要添加逗号
+            if(task.getCol().indexOf(temp) != task.getCol().size()-1  ){
+                //当不是整型和自增时，添加逗号
+                if(!(temp.getType().contains("int") && ((Int)temp).isAutoIncrease())){
+                    prefixSql.append(",");
+                    suffixSql.append(",");
+                }
             }
         }
         prefixSql.append(")");

@@ -72,4 +72,8 @@ public abstract class Type {
     public void setForeignKeyColumn(String foreignKeyColumn) {
         this.foreignKeyColumn = foreignKeyColumn;
     }
+
+    public String toString(){
+        return this.getName();
+    }
 }

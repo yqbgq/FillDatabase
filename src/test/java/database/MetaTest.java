@@ -34,16 +34,15 @@ public class MetaTest {
         try {
             Connection con = DriverManager.getConnection(url, username, password);
             DatabaseMetaData m_DBMetaData = con.getMetaData();
-            ResultSet colRet = m_DBMetaData.getColumns(null,"%", "test10","%");
+            ResultSet colRet = m_DBMetaData.getColumns(null,"%", "course","%");
             while(colRet.next()) {
                 String columnName = colRet.getString("COLUMN_NAME");
                 String columnType = colRet.getString("TYPE_NAME");
                 int datasize = colRet.getInt("COLUMN_SIZE");
                 int digits = colRet.getInt("DECIMAL_DIGITS");
                 int nullable = colRet.getInt("NULLABLE");
-                String ref = colRet.getString("REFERENCED_TABLE_NAME");
                 System.out.println(columnName+" "+columnType+" "+datasize+" "+digits+" "+
-                        nullable + " " + colRet.getString("IS_AUTOINCREMENT") + " " + ref);
+                        nullable + " " + colRet.getString("IS_AUTOINCREMENT").equalsIgnoreCase("yes") + " 1" );
             }
 
         }catch (SQLException e){

@@ -35,6 +35,4 @@ public class CharProduce implements IProduce{
         sb.append("'");
         return sb.toString();
     }
-
-
 }
