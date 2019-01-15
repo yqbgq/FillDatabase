@@ -18,5 +18,6 @@ abstract class AThread extends Thread{
     AThread(Task task, CoreProperty property){
         this.task = task;
         this.property = property;
+        this.setName(task.getDatabase()+"."+task.getTable());
     }
 }
