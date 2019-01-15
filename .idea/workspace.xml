@@ -836,7 +836,7 @@
     <property name="SearchEverywhereHistoryKey" value="ishas&#9;PSI&#9;JAVA://types.Type#isHasForeignKey" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547516209689" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547516432353" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -856,7 +856,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestLogger.print">
+  <component name="RunManager" selected="JUnit.TestLogger.test">
     <configuration name="TestDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Process.TestDemo" />
       <module name="FillDatabase_test" />
@@ -902,22 +902,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCount.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FillDatabase_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="database.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="database" />
-      <option name="MAIN_CLASS_NAME" value="database.TestCount" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestLogger.print" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FillDatabase_test" />
       <extension name="coverage">
@@ -934,20 +918,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestLogger.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FillDatabase_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Logger.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Logger" />
+      <option name="MAIN_CLASS_NAME" value="Logger.TestLogger" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.MetaTest.foreignKey" />
-      <item itemvalue="JUnit.TestCount.test" />
       <item itemvalue="JUnit.TestBuildTask.testBuildTask" />
       <item itemvalue="Application.TestDemo" />
       <item itemvalue="JUnit.TestLogger.print" />
+      <item itemvalue="JUnit.TestLogger.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestLogger.test" />
         <item itemvalue="JUnit.TestLogger.print" />
         <item itemvalue="Application.TestDemo" />
         <item itemvalue="JUnit.MetaTest.foreignKey" />
         <item itemvalue="JUnit.TestBuildTask.testBuildTask" />
-        <item itemvalue="JUnit.TestCount.test" />
       </list>
     </recent_temporary>
   </component>

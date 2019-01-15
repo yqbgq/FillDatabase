@@ -1,6 +1,7 @@
 package Logger;
 
 import org.junit.Test;
+import properties.CoreProperty;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -11,5 +12,11 @@ public class TestLogger {
         Thread.currentThread().setName("hahaha");
         SimpleDateFormat df = new SimpleDateFormat("HH:mm:ss");//设置日期格式
         System.out.println(df.format(new Date()) + "  " + Thread.currentThread());// new Date()为获取当前系统时间
+    }
+
+    @Test
+    public void test(){
+        CoreProperty property = new CoreProperty();
+        property.getLogger().log("Hello Word!");
     }
 }

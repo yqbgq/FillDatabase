@@ -14,7 +14,7 @@ public class Logger  implements ILogger{
         sb.append(Thread.currentThread());
         sb.append("  ");
         sb.append(msg);
-        System.out.println(msg);
+        System.out.println(sb.toString());
 
     }
 }
