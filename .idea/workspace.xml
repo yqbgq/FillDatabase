@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="FillDatabase:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b95fc52e-d768-423c-b605-a784b786e3fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/FillDatabase_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/process/TaskAnalyze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/process/TaskAnalyze.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/produce/SQLProduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/produce/SQLProduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/thread/FillThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/thread/FillThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/database/MetaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/database/MetaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/process/ForeignAnalyze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/process/ForeignAnalyze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/process/TaskAnalyze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/process/TaskAnalyze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/process/TaskClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/process/TaskClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/produce/SQLProduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/produce/SQLProduce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/task/ATask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task/ATask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/thread/FillThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/thread/FillThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Process/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Process/TestDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/database/MetaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/database/MetaTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -102,12 +97,13 @@
     <session id="-198485004">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
-          <entry key="project.open.time.0" value="2" />
+          <entry key="project.closed" value="20" />
+          <entry key="project.open.time.0" value="4" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.41" value="2" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.46" value="1" />
@@ -118,14 +114,14 @@
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.87" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="gradle" value="1" />
-          <entry key="java" value="456" />
+          <entry key="gradle" value="2" />
+          <entry key="java" value="458" />
           <entry key="md" value="1" />
           <entry key="sql" value="1" />
         </counts>
@@ -133,8 +129,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="456" />
+          <entry key="Groovy" value="2" />
+          <entry key="JAVA" value="458" />
           <entry key="Markdown" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -159,46 +155,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Process/TestDemo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/builder/Builder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/properties/CoreProperty.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1096">
-              <caret line="88" column="83" selection-start-line="88" selection-start-column="83" selection-end-line="88" selection-end-column="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/process/TaskAnalyze.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-324">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/process/ForeignAnalyze.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="52" column="85" selection-start-line="52" selection-start-column="85" selection-end-line="52" selection-end-column="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="477">
+              <caret line="56" column="7" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -659,7 +619,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="356" />
     <option name="y" value="73" />
     <option name="width" value="1040" />
@@ -673,8 +633,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -845,6 +803,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -852,12 +812,13 @@
     <property name="SearchEverywhereHistoryKey" value="ishas&#9;PSI&#9;JAVA://types.Type#isHasForeignKey" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547720033848" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547720068574" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15342087" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -993,7 +954,11 @@
       <workItem from="1547382089796" duration="4769000" />
       <workItem from="1547445952875" duration="14673000" />
       <workItem from="1547515248261" duration="10159000" />
-      <workItem from="1547711476651" duration="8415000" />
+      <workItem from="1547711476651" duration="8486000" />
+      <workItem from="1547723230247" duration="346000" />
+      <workItem from="1547724115492" duration="62000" />
+      <workItem from="1547724388606" duration="1121000" />
+      <workItem from="1547725693135" duration="3000" />
     </task>
     <servers />
   </component>
@@ -1030,7 +995,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90271000" />
+    <option name="totallyTimeSpent" value="91874000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1044,7 +1009,7 @@
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31330472" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33154505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1053,7 +1018,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49892703" visible="true" weight="0.65950227" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49892703" weight="0.65950227" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39932126" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1083,13 +1048,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_171/src.zip!/java/lang/StringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/package/caches/modules-2/files-2.1/mysql/mysql-connector-java/8.0.13/3ba97a59f0badd1ccd7463fac4941e47137f9afb/mysql-connector-java-8.0.13-sources.jar!/com/mysql/cj/jdbc/NonRegisteringDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
@@ -1115,10 +1073,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
           <caret line="659" selection-start-line="659" selection-end-line="659" />
-          <folding>
-            <element signature="e#22786#22787#0" expanded="true" />
-            <element signature="e#22821#22822#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1140,16 +1094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/builder/Builder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1431">
-          <caret line="54" column="65" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -1157,9 +1101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
           <caret line="21" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1187,9 +1128,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
           <caret line="19" column="64" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="19" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1263,9 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
           <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1283,13 +1218,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/builder/ConcreteBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1424,24 +1352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding>
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#993#994#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#1129#1130#0" expanded="true" />
-            <element signature="e#1197#1198#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
-            <element signature="e#1299#1300#0" expanded="true" />
-            <element signature="e#1337#1338#0" expanded="true" />
-            <element signature="e#1399#1400#0" expanded="true" />
-            <element signature="e#1453#1454#0" expanded="true" />
-            <element signature="e#1496#1497#0" expanded="true" />
-            <element signature="e#1535#1536#0" expanded="true" />
-            <element signature="e#1599#1600#0" expanded="true" />
-            <element signature="e#1655#1656#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1449,11 +1359,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="29" column="92" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#188#189#0" expanded="true" />
-            <element signature="e#225#226#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1478,6 +1383,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Process/TestDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/properties/CoreProperty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="88" column="83" selection-start-line="88" selection-start-column="83" selection-end-line="88" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1486,7 +1408,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/process/TaskAnalyze.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
+        <state relative-caret-position="27">
           <caret line="72" selection-start-line="72" selection-end-line="72" />
         </state>
       </provider>
@@ -1501,23 +1423,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/properties/CoreProperty.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/builder/ConcreteBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1096">
-          <caret line="88" column="83" selection-start-line="88" selection-start-column="83" selection-end-line="88" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="837">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Process/TestDemo.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
-          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/builder/Builder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="56" column="7" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1527,10 +1450,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>FillDatabase:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

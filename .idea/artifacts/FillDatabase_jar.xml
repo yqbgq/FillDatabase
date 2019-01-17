@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="FillDatabase:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FillDatabase_jar</output-path>
+    <root id="root">
+      <element id="archive" name="FillDatabase.jar">
+        <element id="module-output" name="FillDatabase_main" />
+      </element>
+      <element id="library" level="project" name="Gradle: com.google.protobuf:protobuf-java:3.6.1" />
+      <element id="library" level="project" name="Gradle: junit:junit:4.12" />
+      <element id="library" level="project" name="Gradle: org.hamcrest:hamcrest-core:1.3" />
+      <element id="directory" name="libs">
+        <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:8.0.13" />
+      </element>
+    </root>
+  </artifact>
+</component>
