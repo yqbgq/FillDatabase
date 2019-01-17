@@ -62,6 +62,8 @@ public class TaskClient extends AbstractClient implements Process{
                 foreignTaskList.add(task);
             }
         }
+        System.out.println(threads.size());
+        System.out.println(foreignTaskList.size());
         taskList.clear();
         for(Thread t : threads){
             exe.execute(t);

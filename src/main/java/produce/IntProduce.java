@@ -25,14 +25,10 @@ public class IntProduce implements IProduce{
         Random random = new Random();
         StringBuilder sb = new StringBuilder();
         sb.append("'");
-        sb.append(random.nextInt());
-        while(true){
-            int temp = random.nextInt();
-            if(sb.length() + String.valueOf(temp).length() > maxLength){
-                break;
-            }else{
-                sb.append(String.valueOf(temp));
-            }
+        int length = random.nextInt(maxLength);
+        length = length == 0 ? length + 1 : length;
+        for(int i =0 ;i<length;i++){
+            sb.append(random.nextInt(10));
         }
         sb.append("'");
         return sb.toString();

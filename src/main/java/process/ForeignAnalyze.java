@@ -51,20 +51,22 @@ class ForeignAnalyze {
         ArrayList<String[]> refTables = new ArrayList<>();
         DatabaseMetaData meta = con.getMetaData();
         ResultSet rs = meta.getImportedKeys(task.getDatabase(),null,task.getTable());
+        System.out.println(task);
         while(rs.next()){
             //在依赖表中添加依赖的数据表的数据库名和表名
             refTables.add(new String[] {rs.getString(1),
                     rs.getString(3)});
             //----------------为类型对象添加相关的属性--------------------------------------
-            task.getCol().get(FindType.find(task.getCol(),rs.getString(4))).setHasForeignKey(true);
-            task.getCol().get(FindType.find(task.getCol(),rs.getString(4)))
+            task.getCol().get(FindType.find(task.getCol(),rs.getString(8))).setHasForeignKey(true);
+            task.getCol().get(FindType.find(task.getCol(),rs.getString(8)))
                     .setForeignKeyDatabase(rs.getString(1));
-            task.getCol().get(FindType.find(task.getCol(),rs.getString(4)))
+            task.getCol().get(FindType.find(task.getCol(),rs.getString(8)))
                     .setForeignKeyTable(rs.getString(3));
-            task.getCol().get(FindType.find(task.getCol(),rs.getString(4)))
+            task.getCol().get(FindType.find(task.getCol(),rs.getString(8)))
                     .setForeignKeyColumn(rs.getString(4));
             //----------------为类型对象添加相关的属性--------------------------------------
         }
+        System.out.println(task.getTable()+"has" + refTables.size());
         return refTables;
     }
 

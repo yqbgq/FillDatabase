@@ -14,7 +14,7 @@ public class BitProduce implements IProduce {
         StringBuilder sb = new StringBuilder();
         sb.append("b'");
         int length = random.nextInt(type.getLength());
-        length = length == 0 ? length : length + 1;
+        length = length == 0 ? length+1 : length ;
         for(int i = 0;i <length ; i++){
             if(random.nextFloat() > 0.5){
                 sb.append("1");

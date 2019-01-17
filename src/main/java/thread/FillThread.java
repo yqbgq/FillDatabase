@@ -28,6 +28,7 @@ public class FillThread extends AThread {
             //如果还没有达到提交要求但是已经达到总插入数目，也提交
             while(count > 0){
                 String sql = this.property.getSqlProduce().getSQL(this.task, this.property);
+                System.out.println(sql);
                 ps.addBatch(sql);
                 numOfBatch ++;
                 if(numOfBatch == numOfSQL || count == 1 ) {

@@ -53,7 +53,7 @@ public class SQLProduce implements ISQLProduce{
                                     suffixSql.append(property.getBitProduce().produce(temp));
                                 }
                             }
-                            
+
                         }
                     }
                 }

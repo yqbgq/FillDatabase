@@ -12,6 +12,8 @@ import java.util.Random;
 
 public class CharProduce implements IProduce{
     /**
+     * 对于文本型而言，长度可达65535，这个太长了容易导致内存超限。
+     * 因此在这里限制为最长为2000
      * 返回生成的字符串
      * @return 构造完成的字符串
      */
@@ -23,6 +25,7 @@ public class CharProduce implements IProduce{
                     type.getForeignKeyTable() + " order by rand() limit 1)";
         }
         int maxLength = type.getLength();
+        maxLength = maxLength > 2000 ? 2000 : maxLength;
         StringBuilder sb = new StringBuilder();
         Random random = new Random();
         int count = random.nextInt(maxLength);

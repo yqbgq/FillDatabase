@@ -55,7 +55,7 @@ public class TaskAnalyze {
                             Date type = new Date(columnName,size, nullable == 1);
                             task.addField(type);
                         }else{
-                            if(columnType.toLowerCase().contains("enum")){
+                            if(columnType.toLowerCase().contains("enum") || columnType.toLowerCase().contains("set")){
                                 Enum type = new Enum(columnName,nullable == 1,
                                         conn,task.getDatabase(),task.getTable());
                                 task.addField(type);

@@ -53,13 +53,13 @@ public class MetaTest {
     //测试表中的所有原属性
     @Test
     public void getEveryField(){
-        String url = "jdbc:mysql://127.0.0.1:3306/fill?useSSL=true&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8";
+        String url = "jdbc:mysql://127.0.0.1:3306/final?useSSL=true&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8";
         String username = "root";
         String password = "root";
         try {
             Connection con = DriverManager.getConnection(url, username, password);
             DatabaseMetaData m_DBMetaData = con.getMetaData();
-            ResultSet colRet = m_DBMetaData.getColumns(null,"%", "others","%");
+            ResultSet colRet = m_DBMetaData.getColumns("final","%", "test1","%");
             while(colRet.next()) {
                 System.out.println("====================");
                 for(int i=1;i<25;i++){
@@ -97,16 +97,14 @@ public class MetaTest {
 
     @Test
     public void foreignKey(){
-        String url = "jdbc:mysql://127.0.0.1:3306/fill?useSSL=true&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8";
+        String url = "jdbc:mysql://127.0.0.1:3306/mysql?useSSL=true&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8";
         String username = "root";
         String password = "root";
         try {
             Connection con = DriverManager.getConnection(url, username, password);
             DatabaseMetaData m_DBMetaData = con.getMetaData();
-            ResultSet colRet = m_DBMetaData.getImportedKeys("fill",null,"test10");
-            colRet.last();
-            System.out.println(colRet.getRow());
-            colRet = m_DBMetaData.getImportedKeys("fill",null,"test10");
+            ResultSet colRet = m_DBMetaData.getImportedKeys("final",null,"test3");
+
             while(colRet.next()) {
 
 
