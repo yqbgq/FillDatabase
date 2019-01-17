@@ -10,7 +10,6 @@ import java.util.Random;
  * @author 黄伟
  */
 
-//TODO 判断非空与否能否创建是空的，而且这个好像判断长度有些不准确
 public class CharProduce implements IProduce{
     /**
      * 返回生成的字符串

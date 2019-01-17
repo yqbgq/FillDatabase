@@ -44,8 +44,16 @@ public class SQLProduce implements ISQLProduce{
                             prefixSql.append(temp.getName());
                             suffixSql.append(property.getDateProduce().produce(temp));
                         }else{
-                            prefixSql.append(temp.getName());
-                            suffixSql.append(property.getEnumProduce().produce(temp));
+                            if(temp.getType().contains("enum")){
+                                prefixSql.append(temp.getName());
+                                suffixSql.append(property.getEnumProduce().produce(temp));
+                            }else{
+                                if(temp.getType().contains("bit")){
+                                    prefixSql.append(temp.getName());
+                                    suffixSql.append(property.getBitProduce().produce(temp));
+                                }
+                            }
+                            
                         }
                     }
                 }

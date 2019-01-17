@@ -47,6 +47,9 @@ public class CoreProperty {
     /**默认的枚举生成器**/
     private IProduce enumProduce = new EnumProduce();
 
+    /**默认的比特生成器**/
+    private IProduce bitProduce = new BitProduce();
+
     /**默认的SQL生成器**/
     private ISQLProduce sqlProduce = new SQLProduce();
 
@@ -82,5 +85,7 @@ public class CoreProperty {
     public void setEnumProduce(IProduce enumProduce) { this.enumProduce = enumProduce; }
     public ILogger getLogger() { return logger; }
     public void setLogger(ILogger logger) { this.logger = logger; }
+    public IProduce getBitProduce() { return bitProduce; }
+    public void setBitProduce(IProduce bitProduce) { this.bitProduce = bitProduce; }
     //------------------Setter and Getter ----------------------------------------
 }

@@ -59,6 +59,11 @@ public class TaskAnalyze {
                                 Enum type = new Enum(columnName,nullable == 1,
                                         conn,task.getDatabase(),task.getTable());
                                 task.addField(type);
+                            }else{
+                                if(columnType.toLowerCase().contains("bit")){
+                                    Bit type = new Bit(columnName,size,nullable == 1);
+                                    task.addField(type);
+                                }
                             }
                         }
                     }

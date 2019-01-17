@@ -59,7 +59,7 @@ public class MetaTest {
         try {
             Connection con = DriverManager.getConnection(url, username, password);
             DatabaseMetaData m_DBMetaData = con.getMetaData();
-            ResultSet colRet = m_DBMetaData.getColumns(null,"%", "test10","%");
+            ResultSet colRet = m_DBMetaData.getColumns(null,"%", "others","%");
             while(colRet.next()) {
                 System.out.println("====================");
                 for(int i=1;i<25;i++){
