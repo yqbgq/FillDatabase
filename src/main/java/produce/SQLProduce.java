@@ -21,7 +21,7 @@ public class SQLProduce implements ISQLProduce{
     public  String getSQL(Task task, CoreProperty property){
         String database = task.getDatabase();
         String table = task.getTable();
-        StringBuilder prefixSql = new StringBuilder("insert into " + database + "." + table + "(");
+        StringBuilder prefixSql = new StringBuilder("insert ignore into " + database + "." + table + "(");
         StringBuilder suffixSql = new StringBuilder("values(");
         //构造SQL语句，判断当前列的类型，并交由对应的生成器生成字符串
         for(Type temp : task.getCol()){

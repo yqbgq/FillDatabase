@@ -31,7 +31,7 @@ public abstract class ATask {
     public ArrayList<Type> getCol() { return col; }
     public void setCol(ArrayList<Type> col) { this.col = col; }
     public ArrayList<String[]> getRefTables() {
-        return this.refTables;
+        return refTables;
     }
     public void setRefTables(ArrayList<String[]> refTables) {
         this.refTables = refTables;

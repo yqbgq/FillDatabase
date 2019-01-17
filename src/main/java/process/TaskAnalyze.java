@@ -70,6 +70,7 @@ public class TaskAnalyze {
                 }
             }
         }
+
         if(task.getSize() == 0){
             throw new MissTableException("数据库中不存在指定数据表！");
         }else {
